@@ -1,0 +1,35 @@
+m255
+K4
+z2
+!s11e vcom 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dd:/GitHub/Convolutional_Neural_Network_VHDL_Implementation
+Elinebuffer
+w1720186387
+DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+R0
+8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\LineBuffer.vhd
+Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\LineBuffer.vhd
+l0
+L6 1
+VmC1^AO8H<[;djg7d0I8N91
+!s100 hA?hnCUIgfTj4o99aHcjf1
+OL;C;2021.1;73
+32
+!s110 1720186389
+!i10b 1
+!s108 1720186388.000000
+!s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-check_synthesis|-lint|-rangecheck|-pedanticerrors|-explicit|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\LineBuffer.vhd|
+!s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\LineBuffer.vhd|
+!i113 0
+o-quiet -work {d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project} -check_synthesis -lint -rangecheck -pedanticerrors -explicit
+tExplicit 1 CvgOpt 0
