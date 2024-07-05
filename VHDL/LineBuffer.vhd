@@ -10,7 +10,7 @@ entity LineBuffer is
     );
     port (
         clk        : in  std_logic;
-        eol        : in  std_logic;
+        eol        : in  std_logic; 
         sol        : in  std_logic;
         we         : in  std_logic;
         ready      : in  std_logic;
