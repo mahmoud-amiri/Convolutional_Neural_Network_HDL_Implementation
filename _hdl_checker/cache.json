@@ -582,6 +582,44 @@
    },
    {
     "owner": {
+     "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\VHDL\\S00_AXIS.v",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "S00_AXIS",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      0,
+      6
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\VHDL\\M00_AXIS.v",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "M00_AXIS",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      0,
+      6
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
+   },
+   {
+    "owner": {
      "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\VHDL\\Convolution.vhd",
      "__class__": "Path"
     },
