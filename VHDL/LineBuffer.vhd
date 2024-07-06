@@ -11,7 +11,6 @@ entity LineBuffer is
     port (
         clk        : in  std_logic;
         eol        : in  std_logic; 
-        sol        : in  std_logic;
         we         : in  std_logic;
         ready      : in  std_logic;
         wr_addr    : in  std_logic_vector(13 downto 0);  -- 14-bit address for 16K depth
@@ -65,7 +64,7 @@ begin
     process(clk)
     begin
         if rising_edge(clk) then
-            if sol = '1' then
+            if eol = '1' then
                 read_addr <= (others => '0');
             elsif ready = '1' then
                 read_addr <= std_logic_vector(unsigned(read_addr) + 1);
