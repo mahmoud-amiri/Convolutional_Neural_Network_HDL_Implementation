@@ -8,7 +8,8 @@ entity Conv is
     generic (
         KERNEL_WIDTH : integer := 3;  -- Width of the convolution kernel
         KERNEL_HEIGHT : integer := 3;  -- Height of the convolution kernel
-        DATA_WIDTH : integer := 16   -- Data width (8 to 32 bits)
+        DATA_WIDTH : integer := 16;   -- Data width (8 to 32 bits)
+        STRIDE : integer := 1         -- Stride for the convolution
     );
     port (
         clk         : in  std_logic;
@@ -16,7 +17,6 @@ entity Conv is
         ready       : in  std_logic;
         data_out_buffer : in std_logic_vector(KERNEL_WIDTH*DATA_WIDTH-1 downto 0);
         kernel      : in  kernel_array_2d(0 to KERNEL_HEIGHT-1, 0 to KERNEL_WIDTH-1);
-        stride      : in  integer;
         data_out    : out std_logic_vector(DATA_WIDTH*2-1 downto 0)  -- Wider output to handle intermediate sum
     );
 end Conv;
@@ -48,7 +48,7 @@ begin
                 if ready = '1' then
                     -- Implementing the stride
                     ready_counter <= ready_counter + 1;
-                    if ready_counter = stride then
+                    if ready_counter = STRIDE then
                         ready_counter <= 0;
                         ready_strided <= '1';
                     else
