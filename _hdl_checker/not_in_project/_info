@@ -10,11 +10,34 @@ z2
 !i10f 100
 cModel Technology
 Z0 dd:/GitHub/Convolutional_Neural_Network_VHDL_Implementation
+vAdderTree
+!s110 1720279124
+!i10b 1
+!s100 =^0^2K53:8S<85DdzbmFc1
+Iia>V[IVA<bbPG@CJanQ==3
+R0
+w1720279123
+8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\AdderTree.v
+Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\AdderTree.v
+!i122 153
+L0 1 134
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 OL;L;2021.1;73
+r1
+!s85 0
+31
+!s108 1720279124.000000
+!s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\AdderTree.v|
+!s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-lint|-hazards|-pedanticerrors|-L|not_in_project|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\AdderTree.v|
+!i113 0
+Z3 o-quiet -work {d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project} -lint -hazards -pedanticerrors -L not_in_project -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 tCvgOpt 0
+n@adder@tree
 Econvolution
 w1720194284
-Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 55
 R0
 8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\Convolution.vhd
@@ -23,7 +46,7 @@ l0
 L5 1
 VPBGK1L[ZED;;:fiLo1Y2N1
 !s100 P35Tkjm^HdGfDB<Q>JMT_0
-Z4 OL;C;2021.1;73
+Z8 OL;C;2021.1;73
 32
 !s110 1720194292
 !i10b 1
@@ -31,13 +54,13 @@ Z4 OL;C;2021.1;73
 !s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-check_synthesis|-lint|-rangecheck|-pedanticerrors|-explicit|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\Convolution.vhd|
 !s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\Convolution.vhd|
 !i113 0
-Z5 o-quiet -work {d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project} -check_synthesis -lint -rangecheck -pedanticerrors -explicit
-Z6 tExplicit 1 CvgOpt 0
+Z9 o-quiet -work {d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project} -check_synthesis -lint -rangecheck -pedanticerrors -explicit
+Z10 tExplicit 1 CvgOpt 0
 Econvolutionwrapper
 w1720244337
-R1
-R2
-R3
+R5
+R6
+R7
 !i122 73
 R0
 8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\ConvolutionWrapper.vhd
@@ -46,7 +69,7 @@ l0
 L5 1
 Vd;QE_WXFVGN>@^5P@JNZc1
 !s100 TWO`Zhc;8d_IA=Z<>Jj3i3
-R4
+R8
 32
 !s110 1720244375
 !i10b 1
@@ -54,98 +77,167 @@ R4
 !s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-check_synthesis|-lint|-rangecheck|-pedanticerrors|-explicit|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\ConvolutionWrapper.vhd|
 !s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\ConvolutionWrapper.vhd|
 !i113 0
-R5
-R6
+R9
+R10
 Elinebuffer
 w1720203746
 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-R2
-R3
-!i122 69
+R6
+R7
+!i122 101
 R0
-8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\LineBuffer.vhd
-Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\LineBuffer.vhd
+8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\LineBuffer.vhd
+Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\LineBuffer.vhd
 l0
 L6 1
 VcaNnHi@dHgSPhnd`6kT5;0
 !s100 7J?cYH<g<1kgzo^cYhZId3
-R4
+R8
 32
-!s110 1720203748
+Z11 !s110 1720268805
 !i10b 1
-!s108 1720203748.000000
-!s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-check_synthesis|-lint|-rangecheck|-pedanticerrors|-explicit|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\LineBuffer.vhd|
-!s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\LineBuffer.vhd|
+Z12 !s108 1720268805.000000
+!s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-check_synthesis|-lint|-rangecheck|-pedanticerrors|-explicit|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\LineBuffer.vhd|
+!s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\LineBuffer.vhd|
 !i113 0
-R5
-R6
-vM00_AXIS
-!s110 1720263946
+R9
+R10
+vLineBuffer
+!s110 1720273272
 !i10b 1
-!s100 kf4HVoj37fQFCQ850``zG0
-Iz3h;5^AKHbbZ3[3j4HG;n3
+!s100 >2oW;WAlf<ZBWHREnZa:02
+I23<o0k[m^IDLe;1F1fIJ73
 R0
-w1718276466
-8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\M00_AXIS.v
-Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\M00_AXIS.v
-!i122 93
-L0 1 106
-Z7 VDg1SIo80bB@j0V0VzS_@n1
-Z8 OL;L;2021.1;73
+w1720273271
+8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\LineBuffer.v
+Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\LineBuffer.v
+!i122 133
+L0 1 71
+R1
+R2
 r1
 !s85 0
 31
-!s108 1720263946.000000
-!s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\M00_AXIS.v|
-!s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-lint|-hazards|-pedanticerrors|-L|work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\M00_AXIS.v|
+!s108 1720273272.000000
+!s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\LineBuffer.v|
+!s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-lint|-hazards|-pedanticerrors|-L|not_in_project|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\LineBuffer.v|
 !i113 0
-o-quiet -work {d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project} -lint -hazards -pedanticerrors -L work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z9 tCvgOpt 0
-n@m00_@a@x@i@s
-Epingpongcontroller
-Z10 w1720245520
+R3
+R4
+n@line@buffer
+vM00_AXIS
+R11
+!i10b 1
+!s100 kf4HVoj37fQFCQ850``zG0
+I<i5`Iga8T7Eod<9NKZeNe2
+R0
+w1718276466
+8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\M00_AXIS.v
+Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\M00_AXIS.v
+!i122 98
+L0 1 106
 R1
 R2
-R3
-!i122 81
+r1
+!s85 0
+31
+R12
+!s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\M00_AXIS.v|
+!s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-lint|-hazards|-pedanticerrors|-L|work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\M00_AXIS.v|
+!i113 0
+Z13 o-quiet -work {d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project} -lint -hazards -pedanticerrors -L work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+n@m00_@a@x@i@s
+Epingpongcontroller
+Z14 w1720245520
+R5
+R6
+R7
+!i122 99
 R0
-Z11 8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\PingPongController.vhd
-Z12 Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\PingPongController.vhd
+Z15 8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\PingPongController.vhd
+Z16 Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\PingPongController.vhd
 l0
 L5 1
 VQlg6FcDA^U4o7^;UU7:EV3
 !s100 [CcKAZf_aTVk[mJjD:7P_1
-R4
+R8
 32
-Z13 !s110 1720245522
+R11
 !i10b 1
-Z14 !s108 1720245522.000000
-Z15 !s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-check_synthesis|-lint|-rangecheck|-pedanticerrors|-explicit|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\PingPongController.vhd|
-Z16 !s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\PingPongController.vhd|
+R12
+Z17 !s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-check_synthesis|-lint|-rangecheck|-pedanticerrors|-explicit|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\PingPongController.vhd|
+Z18 !s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\PingPongController.vhd|
 !i113 0
+R9
+R10
+Abehavioral
 R5
 R6
-Abehavioral
-R1
-R2
-R3
+R7
 DEx4 work 18 pingpongcontroller 0 22 Qlg6FcDA^U4o7^;UU7:EV3
-!i122 81
+!i122 99
 l46
 L22 83
 VK@X3:GS2hAzL9D=0;`SXn2
 !s100 [58@U^@3Y_EB@eS=ooL6[2
-R4
+R8
 32
-R13
+R11
 !i10b 1
-R14
-R15
-R16
+R12
+R17
+R18
 !i113 0
-R5
-R6
+R9
+R10
+vPingPongController
+!s110 1720273188
+!i10b 1
+!s100 A@iz=CEjTEa6zO`TGb30k0
+IjQJ[^VifkOcQ0K2zI3?CR3
+R0
+w1720273187
+8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\PingPongController.v
+Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\PingPongController.v
+!i122 121
+L0 1 70
+R1
+R2
+r1
+!s85 0
+31
+!s108 1720273188.000000
+!s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\PingPongController.v|
+!s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-lint|-hazards|-pedanticerrors|-L|work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\PingPongController.v|
+!i113 0
+R13
+R4
+n@ping@pong@controller
+vProductCalculation
+!s110 1720275993
+!i10b 1
+!s100 i6>9V?ccVG4S8iZ>0Negn1
+IiCj?idc^Z^Qb[Ud5e^IAY1
+R0
+w1720273216
+8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\ProductCalculation.v
+Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\ProductCalculation.v
+!i122 145
+L0 1 93
+R1
+R2
+r1
+!s85 0
+31
+!s108 1720275993.000000
+!s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\ProductCalculation.v|
+!s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-lint|-hazards|-pedanticerrors|-L|not_in_project|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\ProductCalculation.v|
+!i113 0
+R3
+R4
+n@product@calculation
 vS00_AXIS
 !s110 1720246965
 !i10b 1
@@ -157,8 +249,8 @@ w1718277740
 Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\S00_AXIS.v
 !i122 85
 L0 1 85
-R7
-R8
+R1
+R2
 r1
 !s85 0
 31
@@ -166,6 +258,29 @@ r1
 !s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\S00_AXIS.v|
 !s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-lint|-hazards|-pedanticerrors|-L|not_in_project|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\S00_AXIS.v|
 !i113 0
-o-quiet -work {d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project} -lint -hazards -pedanticerrors -L not_in_project -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R9
+R3
+R4
 n@s00_@a@x@i@s
+vSlidingWindow
+!s110 1720273097
+!i10b 1
+!s100 QZFzS:BiR5naDM305k=GP2
+IjjfFb5]77KFWL=_dRMlYd0
+R0
+w1720273097
+8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\SlidingWindow_4D.v
+Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\SlidingWindow_4D.v
+!i122 115
+L0 1 79
+R1
+R2
+r1
+!s85 0
+31
+!s108 1720273097.000000
+!s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\SlidingWindow_4D.v|
+!s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-lint|-hazards|-pedanticerrors|-L|work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\HDL\SlidingWindow_4D.v|
+!i113 0
+R13
+R4
+n@sliding@window
