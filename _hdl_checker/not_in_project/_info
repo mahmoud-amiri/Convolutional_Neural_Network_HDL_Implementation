@@ -79,3 +79,46 @@ R4
 !i113 0
 R5
 R6
+Epingpongcontroller
+Z7 w1720245520
+R1
+R2
+R3
+!i122 81
+R0
+Z8 8d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\PingPongController.vhd
+Z9 Fd:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\PingPongController.vhd
+l0
+L5 1
+VQlg6FcDA^U4o7^;UU7:EV3
+!s100 [CcKAZf_aTVk[mJjD:7P_1
+R4
+32
+Z10 !s110 1720245522
+!i10b 1
+Z11 !s108 1720245522.000000
+Z12 !s90 -modelsimini|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\modelsim.ini|-quiet|-work|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\_hdl_checker\not_in_project|-check_synthesis|-lint|-rangecheck|-pedanticerrors|-explicit|d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\PingPongController.vhd|
+Z13 !s107 d:\GitHub\Convolutional_Neural_Network_VHDL_Implementation\VHDL\PingPongController.vhd|
+!i113 0
+R5
+R6
+Abehavioral
+R1
+R2
+R3
+Z14 DEx4 work 18 pingpongcontroller 0 22 Qlg6FcDA^U4o7^;UU7:EV3
+!i122 81
+l46
+Z15 L22 83
+Z16 VK@X3:GS2hAzL9D=0;`SXn2
+Z17 !s100 [58@U^@3Y_EB@eS=ooL6[2
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R5
+R6

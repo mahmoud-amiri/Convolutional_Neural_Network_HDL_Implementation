@@ -511,7 +511,45 @@
     },
     "type_": "entity",
     "name": {
-     "name": "conv",
+     "name": "Conv",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      6,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\VHDL\\PingPongController.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "PingPongController",
+     "case_sensitive": false,
+     "__class__": "VhdlIdentifier"
+    },
+    "locations": [
+     [
+      4,
+      7
+     ]
+    ],
+    "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\VHDL\\ConvolutionWrapper.vhd",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "ConvolutionWrapper",
      "case_sensitive": false,
      "__class__": "VhdlIdentifier"
     },
@@ -594,25 +632,6 @@
     "locations": [
      [
       4,
-      7
-     ]
-    ],
-    "__class__": "VhdlDesignUnit"
-   },
-   {
-    "owner": {
-     "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\VHDL\\ConvolutionWrapper.vhd",
-     "__class__": "Path"
-    },
-    "type_": "entity",
-    "name": {
-     "name": "ConvolutionWrapper",
-     "case_sensitive": false,
-     "__class__": "VhdlIdentifier"
-    },
-    "locations": [
-     [
-      6,
       7
      ]
     ],

@@ -4,7 +4,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 use work.ConvolutionPackage.ALL;
 
-entity conv is
+entity Conv is
     generic (
         KERNEL_WIDTH : integer := 3;  -- Width of the convolution kernel
         KERNEL_HEIGHT : integer := 3;  -- Height of the convolution kernel
@@ -18,9 +18,9 @@ entity conv is
         kernel      : in  kernel_array_2d(0 to KERNEL_HEIGHT-1, 0 to KERNEL_WIDTH-1);
         data_out    : out std_logic_vector(DATA_WIDTH*2-1 downto 0)  -- Wider output to handle intermediate sum
     );
-end conv;
+end Conv;
 
-architecture Behavioral of conv is
+architecture Behavioral of Conv is
 
     signal window : kernel_array_2d(0 to KERNEL_HEIGHT-1, 0 to KERNEL_WIDTH-1);
     signal products : product_array(0 to KERNEL_HEIGHT*KERNEL_WIDTH-1) := (others => (others => '0'));
