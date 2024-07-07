@@ -1,48 +1,26 @@
-`include "flatten_macros.vh"
+``include "flatten_macros.vh"
+`include "unflatten_macros.vh"
 
-module main_module;
+module flatten_unflatten_module #(parameter WIDTH = 4, HEIGHT = 8, DEPTH = 4, TIME = 5, CHANNEL = 3, DATA_SIZE = 16) (
+    input [(WIDTH*HEIGHT*DEPTH*TIME*CHANNEL*DATA_SIZE)-1:0] flat_input,
+    output [(WIDTH*HEIGHT*DEPTH*TIME*CHANNEL*DATA_SIZE)-1:0] flat_output
+);
+  // Declare the multi-dimensional array
+  reg [DATA_SIZE-1:0] multi_dim_array [0:WIDTH-1][0:HEIGHT-1][0:DEPTH-1][0:TIME-1][0:CHANNEL-1];
+  wire [(WIDTH*HEIGHT*DEPTH*TIME*CHANNEL*DATA_SIZE)-1:0] flat_temp;
 
-  // Parameters for array dimensions and data size
-  parameter WIDTH = 4;
-  parameter HEIGHT = 8;
-  parameter DEPTH = 4;
-  parameter TIME = 5;
-  parameter CHANNEL = 3;
-  parameter DATA_SIZE = 16;  // Example data size
+  // Use macros to define the unflatten and flatten functions
+  `UNFLATTEN_5D(flat_input, multi_dim_array, WIDTH, HEIGHT, DEPTH, TIME, CHANNEL, DATA_SIZE)
+  `FLATTEN_5D(multi_dim_array, WIDTH, HEIGHT, DEPTH, TIME, CHANNEL, DATA_SIZE)
 
-  // Declare the arrays
-  reg [DATA_SIZE-1:0] array_1d [0:WIDTH-1];
-  reg [DATA_SIZE-1:0] array_2d [0:WIDTH-1][0:HEIGHT-1];
-  reg [DATA_SIZE-1:0] array_3d [0:WIDTH-1][0:HEIGHT-1][0:DEPTH-1];
-  reg [DATA_SIZE-1:0] array_4d [0:WIDTH-1][0:HEIGHT-1][0:DEPTH-1][0:TIME-1];
-  reg [DATA_SIZE-1:0] array_5d [0:WIDTH-1][0:HEIGHT-1][0:DEPTH-1][0:TIME-1][0:CHANNEL-1];
-
-  // Flattened arrays
-  wire [(WIDTH*DATA_SIZE)-1:0] flat_1d;
-  wire [(WIDTH*HEIGHT*DATA_SIZE)-1:0] flat_2d;
-  wire [(WIDTH*HEIGHT*DEPTH*DATA_SIZE)-1:0] flat_3d;
-  wire [(WIDTH*HEIGHT*DEPTH*TIME*DATA_SIZE)-1:0] flat_4d;
-  wire [(WIDTH*HEIGHT*DEPTH*TIME*CHANNEL*DATA_SIZE)-1:0] flat_5d;
-
-  // Use macros to define the flatten functions
-  `FLATTEN_1D(array_1d, WIDTH, DATA_SIZE)
-  `FLATTEN_2D(array_2d, WIDTH, HEIGHT, DATA_SIZE)
-  `FLATTEN_3D(array_3d, WIDTH, HEIGHT, DEPTH, DATA_SIZE)
-  `FLATTEN_4D(array_4d, WIDTH, HEIGHT, DEPTH, TIME, DATA_SIZE)
-  `FLATTEN_5D(array_5d, WIDTH, HEIGHT, DEPTH, TIME, CHANNEL, DATA_SIZE)
-
-  // Assign the flattened arrays
-  assign flat_1d = flatten_1d(array_1d);
-  assign flat_2d = flatten_2d(array_2d);
-  assign flat_3d = flatten_3d(array_3d);
-  assign flat_4d = flatten_4d(array_4d);
-  assign flat_5d = flatten_5d(array_5d);
-
+  // Unflatten the input and flatten the multi-dimensional array
   initial begin
-    // Initialize the arrays with some values (example)
-    integer i, j, k, l, m;
-    for (i = 0; i < WIDTH; i = i + 1) begin
-      array_1d[i] = i * DATA_SIZE;
-      for (j = 0; j < HEIGHT; j = j + 1) begin
-        array_2d[i][j] = (i * HEIGHT + j) * DATA_SIZE;
-        for
+    unflatten_5d(flat_input, multi_dim_array);
+  end
+
+  assign flat_temp = flatten_5d(multi_dim_array);
+
+  // Assign the result to the output
+  assign flat_output = flat_temp;
+
+endmodule
