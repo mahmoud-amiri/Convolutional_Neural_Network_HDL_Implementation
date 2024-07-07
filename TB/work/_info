@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s99 nomlopt
 !s11f vlog 2021.1 2021.01, Jan 19 2021
 13
 !s112 1.1
@@ -9,9 +10,110 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/GitHub/Convolutional_Neural_Network_VHDL_Implementation/TB
+vM00_AXIS
+Z1 !s110 1720356761
+!i10b 1
+!s100 NIYRaoElE^5RA]7bMLX=b3
+I^k];DljDBgC8KC4_]?_E@0
+R0
+w1720353603
+8../HDL/M00_AXIS.v
+F../HDL/M00_AXIS.v
+!i122 4
+L0 1 106
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z4 !s108 1720356761.000000
+!s107 ../HDL/M00_AXIS.v|
+!s90 -reportprogress|300|-work|work|../HDL/M00_AXIS.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+n@m00_@a@x@i@s
+vpassthrough_axis
+R1
+!i10b 1
+!s100 Z34OfbRQ:BG=nCnkKR8je2
+IUW08O6QAkSClmDoR<]g[o2
+R0
+w1720355701
+8../HDL/layer_wrapper_template.v
+F../HDL/layer_wrapper_template.v
+!i122 3
+L0 3 102
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 ../HDL/layer_wrapper_template.v|
+!s90 -reportprogress|300|-work|work|../HDL/layer_wrapper_template.v|
+!i113 0
+R5
+R6
+vread_image_file_axis
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1720356760
+!i10b 1
+!s100 [UVS:L_a1IIc:i4;7MM?c2
+ID=5V=6<:dj7ecaHfY<87=1
+S1
+R0
+w1720352721
+8read_image_file_axis.sv
+Fread_image_file_axis.sv
+!i122 1
+L0 1 129
+R2
+R3
+r1
+!s85 0
+31
+Z9 !s108 1720356760.000000
+!s107 read_image_file_axis.sv|
+!s90 -reportprogress|300|-sv|-work|work|read_image_file_axis.sv|
+!i113 0
+Z10 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vS00_AXIS
+R1
+!i10b 1
+!s100 nMKWWR3UghjTz:Q?hZ4m12
+Id0`dTzoaiQ]R7^C<=K5060
+R0
+w1718277740
+8../HDL/S00_AXIS.v
+F../HDL/S00_AXIS.v
+!i122 5
+L0 1 85
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 ../HDL/S00_AXIS.v|
+!s90 -reportprogress|300|-work|work|../HDL/S00_AXIS.v|
+!i113 0
+R5
+R6
+n@s00_@a@x@i@s
+Ttb_optimized
+R1
+VXV?QXo`EnFJQ52hkg]RPX3
+04 9 4 work testbench fast 0
+!s124 OEM100
+o+acc
+R6
+ntb_optimized
+OL;O;2021.1;73
 vtestbench
-DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1720343859
+R7
+R8
 !i10b 1
 !s100 lYiE=ZZ7:kBQd3WeXA[@U3
 IMggdf1]LZa;EAH8RWd=_f2
@@ -22,14 +124,38 @@ w1720342202
 Ftestbench.sv
 !i122 0
 L0 3 91
-VDg1SIo80bB@j0V0VzS_@n1
-OL;L;2021.1;73
+R2
+R3
 r1
 !s85 0
 31
-!s108 1720343859.000000
+R9
 !s107 testbench.sv|
 !s90 -reportprogress|300|-sv|-work|work|testbench.sv|
 !i113 0
-o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-tCvgOpt 0
+R10
+R6
+vvideo_pattern_gen_axis
+R7
+R1
+!i10b 1
+!s100 `6[mbN?YMDLCANOlE@FiS0
+IC4zffg_1Ai^f]Pm;H7GBC3
+S1
+R0
+w1720352785
+8video_pattern_gen_axis.sv
+Fvideo_pattern_gen_axis.sv
+!i122 2
+L0 1 57
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 video_pattern_gen_axis.sv|
+!s90 -reportprogress|300|-sv|-work|work|video_pattern_gen_axis.sv|
+!i113 0
+R10
+R6

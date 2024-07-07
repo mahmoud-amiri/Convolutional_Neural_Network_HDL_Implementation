@@ -14,164 +14,969 @@
 # //
 # do run.do
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:08:47 on Jul 07,2024
-# vlog -reportprogress 300 -sv -work work testbech.sv 
-# ** Error: (vlog-7) Failed to open design unit file "testbech.sv" in read mode.
-# No such file or directory. (errno = ENOENT)
-# End time: 11:08:47 on Jul 07,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/questasim64_2021.1/win64/vlog failed.
-# Error in macro ./run.do line 20
-# C:/questasim64_2021.1/win64/vlog failed.
-#     while executing
-# "vlog -sv -work work testbech.sv"
-#     ("eval" body line 1)
-#     invoked from within
-# "eval "$command $file""
-#     (procedure "compile_files" line 5)
-#     invoked from within
-# "compile_files "sv_files.txt" "vlog -sv -work work""
-do run.do
-# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:10:30 on Jul 07,2024
+# Start time: 13:54:11 on Jul 07,2024
 # vlog -reportprogress 300 -sv -work work testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 11:10:30 on Jul 07,2024, Elapsed time: 0:00:00
+# End time: 13:54:11 on Jul 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:10:30 on Jul 07,2024
+# Start time: 13:54:11 on Jul 07,2024
 # vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
 # -- Compiling module read_image_file_axis
-# ** Error: (vlog-13069) read_image_file_axis.sv(14): near "$fopen": syntax error, unexpected SYSTEM_IDENTIFIER, expecting IDENTIFIER.
-# ** Error: (vlog-13069) read_image_file_axis.sv(15): near "$fclose": syntax error, unexpected SYSTEM_IDENTIFIER, expecting IDENTIFIER.
-# ** Error: (vlog-13069) read_image_file_axis.sv(16): near "$fread": syntax error, unexpected SYSTEM_IDENTIFIER, expecting IDENTIFIER.
-# End time: 11:10:30 on Jul 07,2024, Elapsed time: 0:00:00
+# 
+# Top level modules:
+# 	read_image_file_axis
+# End time: 13:54:11 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 13:54:12 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work video_pattern_gen_axis.sv 
+# -- Compiling module video_pattern_gen_axis
+# 
+# Top level modules:
+# 	video_pattern_gen_axis
+# End time: 13:54:12 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 13:54:12 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/layer_wrapper_template.v 
+# -- Compiling module passthrough_axis
+# 
+# Top level modules:
+# 	passthrough_axis
+# End time: 13:54:12 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 13:54:12 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/M00_AXIS.v 
+# -- Compiling module M00_AXIS
+# 
+# Top level modules:
+# 	M00_AXIS
+# End time: 13:54:12 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 13:54:12 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/S00_AXIS.v 
+# -- Compiling module S00_AXIS
+# 
+# Top level modules:
+# 	S00_AXIS
+# End time: 13:54:12 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 13:54:12 on Jul 07,2024
+# vopt -reportprogress 300 work.testbench -o tb_optimized "+acc" 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module read_image_file_axis
+# -- Loading module passthrough_axis
+# -- Loading module S00_AXIS
+# -- Loading module M00_AXIS
+# ** Error: ../HDL/M00_AXIS.v(78): Register is illegal in left-hand side of continuous assignment
+# ** Error: ../HDL/M00_AXIS.v(79): Register is illegal in left-hand side of continuous assignment
+# Optimization failed
+# End time: 13:54:12 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vopt failed.
+# Error in macro ./run.do line 24
+# Return status = 12
+#     (procedure "compile" line 1)
+#     invoked from within
+# "compile NoFilter vopt work.testbench -o tb_optimized +acc"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval compile NoFilter vopt $args"
+#     (procedure "vopt" line 9)
+#     invoked from within
+# "vopt work.testbench -o tb_optimized +acc"
+do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:00:09 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 14:00:09 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:00:09 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
+# -- Compiling module read_image_file_axis
+# 
+# Top level modules:
+# 	read_image_file_axis
+# End time: 14:00:09 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:00:09 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work video_pattern_gen_axis.sv 
+# -- Compiling module video_pattern_gen_axis
+# 
+# Top level modules:
+# 	video_pattern_gen_axis
+# End time: 14:00:09 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:00:09 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/layer_wrapper_template.v 
+# -- Compiling module passthrough_axis
+# 
+# Top level modules:
+# 	passthrough_axis
+# End time: 14:00:09 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:00:09 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/M00_AXIS.v 
+# -- Compiling module M00_AXIS
+# 
+# Top level modules:
+# 	M00_AXIS
+# End time: 14:00:09 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:00:09 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/S00_AXIS.v 
+# -- Compiling module S00_AXIS
+# 
+# Top level modules:
+# 	S00_AXIS
+# End time: 14:00:09 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:00:09 on Jul 07,2024
+# vopt -reportprogress 300 work.testbench -o tb_optimized "+acc" 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module read_image_file_axis
+# -- Loading module passthrough_axis
+# -- Loading module S00_AXIS
+# -- Loading module M00_AXIS
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'data_out' (9th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'user_out' (10th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'last_out' (11th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'empty' (12th connection) to reg type. 
+# Optimization failed
+# End time: 14:00:09 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vopt failed.
+# Error in macro ./run.do line 24
+# Return status = 2
+#     (procedure "compile" line 1)
+#     invoked from within
+# "compile NoFilter vopt work.testbench -o tb_optimized +acc"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval compile NoFilter vopt $args"
+#     (procedure "vopt" line 9)
+#     invoked from within
+# "vopt work.testbench -o tb_optimized +acc"
+do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:01:58 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 14:01:58 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:01:58 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
+# -- Compiling module read_image_file_axis
+# 
+# Top level modules:
+# 	read_image_file_axis
+# End time: 14:01:58 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:01:58 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work video_pattern_gen_axis.sv 
+# -- Compiling module video_pattern_gen_axis
+# 
+# Top level modules:
+# 	video_pattern_gen_axis
+# End time: 14:01:58 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:01:58 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/layer_wrapper_template.v 
+# -- Compiling module passthrough_axis
+# 
+# Top level modules:
+# 	passthrough_axis
+# End time: 14:01:58 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:01:58 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/M00_AXIS.v 
+# -- Compiling module M00_AXIS
+# 
+# Top level modules:
+# 	M00_AXIS
+# End time: 14:01:58 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:01:58 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/S00_AXIS.v 
+# -- Compiling module S00_AXIS
+# 
+# Top level modules:
+# 	S00_AXIS
+# End time: 14:01:58 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:01:58 on Jul 07,2024
+# vopt -reportprogress 300 work.testbench -o tb_optimized "+acc" 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module read_image_file_axis
+# -- Loading module passthrough_axis
+# -- Loading module S00_AXIS
+# -- Loading module M00_AXIS
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'data_out' (9th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'user_out' (10th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'last_out' (11th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'empty' (12th connection) to reg type. 
+# Optimization failed
+# End time: 14:01:58 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vopt failed.
+# Error in macro ./run.do line 24
+# Return status = 2
+#     (procedure "compile" line 1)
+#     invoked from within
+# "compile NoFilter vopt work.testbench -o tb_optimized +acc"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval compile NoFilter vopt $args"
+#     (procedure "vopt" line 9)
+#     invoked from within
+# "vopt work.testbench -o tb_optimized +acc"
+do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:03:04 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 14:03:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:03:04 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
+# -- Compiling module read_image_file_axis
+# 
+# Top level modules:
+# 	read_image_file_axis
+# End time: 14:03:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:03:04 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work video_pattern_gen_axis.sv 
+# -- Compiling module video_pattern_gen_axis
+# 
+# Top level modules:
+# 	video_pattern_gen_axis
+# End time: 14:03:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:03:04 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/layer_wrapper_template.v 
+# -- Compiling module passthrough_axis
+# 
+# Top level modules:
+# 	passthrough_axis
+# End time: 14:03:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:03:04 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/M00_AXIS.v 
+# -- Compiling module M00_AXIS
+# 
+# Top level modules:
+# 	M00_AXIS
+# End time: 14:03:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:03:04 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/S00_AXIS.v 
+# -- Compiling module S00_AXIS
+# 
+# Top level modules:
+# 	S00_AXIS
+# End time: 14:03:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:03:04 on Jul 07,2024
+# vopt -reportprogress 300 work.testbench -o tb_optimized "+acc" 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module read_image_file_axis
+# -- Loading module passthrough_axis
+# -- Loading module S00_AXIS
+# -- Loading module M00_AXIS
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'data_out' (9th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'user_out' (10th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'last_out' (11th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'empty' (12th connection) to reg type. 
+# Optimization failed
+# End time: 14:03:05 on Jul 07,2024, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vopt failed.
+# Error in macro ./run.do line 24
+# Return status = 2
+#     (procedure "compile" line 1)
+#     invoked from within
+# "compile NoFilter vopt work.testbench -o tb_optimized +acc"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval compile NoFilter vopt $args"
+#     (procedure "vopt" line 9)
+#     invoked from within
+# "vopt work.testbench -o tb_optimized +acc"
+do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:13:33 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 14:13:33 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:13:33 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
+# -- Compiling module read_image_file_axis
+# 
+# Top level modules:
+# 	read_image_file_axis
+# End time: 14:13:33 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:13:33 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work video_pattern_gen_axis.sv 
+# -- Compiling module video_pattern_gen_axis
+# 
+# Top level modules:
+# 	video_pattern_gen_axis
+# End time: 14:13:33 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:13:33 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/layer_wrapper_template.v 
+# -- Compiling module passthrough_axis
+# 
+# Top level modules:
+# 	passthrough_axis
+# End time: 14:13:33 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:13:33 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/M00_AXIS.v 
+# -- Compiling module M00_AXIS
+# 
+# Top level modules:
+# 	M00_AXIS
+# End time: 14:13:33 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:13:33 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/S00_AXIS.v 
+# -- Compiling module S00_AXIS
+# 
+# Top level modules:
+# 	S00_AXIS
+# End time: 14:13:33 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:13:33 on Jul 07,2024
+# vopt -reportprogress 300 work.testbench -o tb_optimized "+acc" 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module read_image_file_axis
+# -- Loading module passthrough_axis
+# -- Loading module S00_AXIS
+# -- Loading module M00_AXIS
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'data_out' (9th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'user_out' (10th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'last_out' (11th connection) to reg type. 
+# Optimization failed
+# End time: 14:13:33 on Jul 07,2024, Elapsed time: 0:00:00
 # Errors: 3, Warnings: 0
-# ** Error: C:/questasim64_2021.1/win64/vlog failed.
-# Error in macro ./run.do line 20
-# C:/questasim64_2021.1/win64/vlog failed.
-#     while executing
-# "vlog -sv -work work read_image_file_axis.sv"
+# ** Error: C:/questasim64_2021.1/win64/vopt failed.
+# Error in macro ./run.do line 24
+# Return status = 2
+#     (procedure "compile" line 1)
+#     invoked from within
+# "compile NoFilter vopt work.testbench -o tb_optimized +acc"
 #     ("eval" body line 1)
 #     invoked from within
-# "eval "$command $file""
-#     (procedure "compile_files" line 5)
+# "eval compile NoFilter vopt $args"
+#     (procedure "vopt" line 9)
 #     invoked from within
-# "compile_files "sv_files.txt" "vlog -sv -work work""
+# "vopt work.testbench -o tb_optimized +acc"
 do run.do
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:14:17 on Jul 07,2024
+# Start time: 14:34:09 on Jul 07,2024
 # vlog -reportprogress 300 -sv -work work testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 11:14:17 on Jul 07,2024, Elapsed time: 0:00:00
+# End time: 14:34:10 on Jul 07,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:14:17 on Jul 07,2024
+# Start time: 14:34:10 on Jul 07,2024
 # vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
 # -- Compiling module read_image_file_axis
-# ** Error: read_image_file_axis.sv(36): (vlog-13003) Enum member 'DONE' has value that is outside the representable range of the enum.
-# ** Error: read_image_file_axis.sv(89): (vlog-60) Non-blocking assignment to elements of dynamic arrays is not currently supported.
-# ** Warning: read_image_file_axis.sv(123): (vlog-2240) Treating stand-alone use of function 'dpi_fclose' as an implicit VOID cast.
-# End time: 11:14:17 on Jul 07,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 1
-# ** Error: C:/questasim64_2021.1/win64/vlog failed.
-# Error in macro ./run.do line 20
-# C:/questasim64_2021.1/win64/vlog failed.
-#     while executing
-# "vlog -sv -work work read_image_file_axis.sv"
+# 
+# Top level modules:
+# 	read_image_file_axis
+# End time: 14:34:10 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:34:10 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work video_pattern_gen_axis.sv 
+# -- Compiling module video_pattern_gen_axis
+# 
+# Top level modules:
+# 	video_pattern_gen_axis
+# End time: 14:34:10 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:34:10 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/layer_wrapper_template.v 
+# -- Compiling module passthrough_axis
+# 
+# Top level modules:
+# 	passthrough_axis
+# End time: 14:34:10 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:34:10 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/M00_AXIS.v 
+# -- Compiling module M00_AXIS
+# 
+# Top level modules:
+# 	M00_AXIS
+# End time: 14:34:10 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:34:10 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/S00_AXIS.v 
+# -- Compiling module S00_AXIS
+# 
+# Top level modules:
+# 	S00_AXIS
+# End time: 14:34:10 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:34:10 on Jul 07,2024
+# vopt -reportprogress 300 work.testbench -o tb_optimized "+acc" 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module read_image_file_axis
+# -- Loading module passthrough_axis
+# -- Loading module S00_AXIS
+# -- Loading module M00_AXIS
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'data_out' (9th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'user_out' (10th connection) to reg type. 
+# ** Error (suppressible): ../HDL/layer_wrapper_template.v(47): (vopt-8884) Illegal output port connection for 'last_out' (11th connection) to reg type. 
+# Optimization failed
+# End time: 14:34:10 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vopt failed.
+# Error in macro ./run.do line 24
+# Return status = 2
+#     (procedure "compile" line 1)
+#     invoked from within
+# "compile NoFilter vopt work.testbench -o tb_optimized +acc"
 #     ("eval" body line 1)
 #     invoked from within
-# "eval "$command $file""
-#     (procedure "compile_files" line 5)
+# "eval compile NoFilter vopt $args"
+#     (procedure "vopt" line 9)
 #     invoked from within
-# "compile_files "sv_files.txt" "vlog -sv -work work""
+# "vopt work.testbench -o tb_optimized +acc"
 do run.do
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:15:41 on Jul 07,2024
+# Start time: 14:35:04 on Jul 07,2024
 # vlog -reportprogress 300 -sv -work work testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 11:15:41 on Jul 07,2024, Elapsed time: 0:00:00
+# End time: 14:35:04 on Jul 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:15:42 on Jul 07,2024
+# Start time: 14:35:04 on Jul 07,2024
 # vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
 # -- Compiling module read_image_file_axis
-# ** Error: (vlog-13069) read_image_file_axis.sv(78): near "unsigned": syntax error, unexpected unsigned, expecting '\''.
-# End time: 11:15:42 on Jul 07,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/questasim64_2021.1/win64/vlog failed.
-# Error in macro ./run.do line 20
-# C:/questasim64_2021.1/win64/vlog failed.
-#     while executing
-# "vlog -sv -work work read_image_file_axis.sv"
-#     ("eval" body line 1)
-#     invoked from within
-# "eval "$command $file""
-#     (procedure "compile_files" line 5)
-#     invoked from within
-# "compile_files "sv_files.txt" "vlog -sv -work work""
+# 
+# Top level modules:
+# 	read_image_file_axis
+# End time: 14:35:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:35:04 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work video_pattern_gen_axis.sv 
+# -- Compiling module video_pattern_gen_axis
+# 
+# Top level modules:
+# 	video_pattern_gen_axis
+# End time: 14:35:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:35:04 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/layer_wrapper_template.v 
+# -- Compiling module passthrough_axis
+# 
+# Top level modules:
+# 	passthrough_axis
+# End time: 14:35:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:35:04 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/M00_AXIS.v 
+# -- Compiling module M00_AXIS
+# 
+# Top level modules:
+# 	M00_AXIS
+# End time: 14:35:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:35:04 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/S00_AXIS.v 
+# -- Compiling module S00_AXIS
+# 
+# Top level modules:
+# 	S00_AXIS
+# End time: 14:35:04 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:35:04 on Jul 07,2024
+# vopt -reportprogress 300 work.testbench -o tb_optimized "+acc" 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module read_image_file_axis
+# -- Loading module passthrough_axis
+# -- Loading module S00_AXIS
+# -- Loading module M00_AXIS
+# Optimizing 5 design-units (inlining 0/5 module instances):
+# -- Optimizing module read_image_file_axis(fast)
+# ** Note: (vopt-143) Recognized 1 FSM in module "read_image_file_axis(fast)".
+# -- Optimizing module S00_AXIS(fast)
+# -- Optimizing module M00_AXIS(fast)
+# -- Optimizing module passthrough_axis(fast)
+# ** Warning: ../HDL/layer_wrapper_template.v(47): (vopt-2685) [TFMPC] - Too few port connections for 'S00_AXIS_inst'.  Expected 14, found 13.
+# ** Warning: ../HDL/layer_wrapper_template.v(47): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
+# -- Optimizing module testbench(fast)
+# Optimized design name is tb_optimized
+# End time: 14:35:05 on Jul 07,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# vsim -lib work tb_optimized 
+# Start time: 14:35:05 on Jul 07,2024
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.read_image_file_axis(fast)
+# Loading work.passthrough_axis(fast)
+# Loading work.S00_AXIS(fast)
+# Loading work.M00_AXIS(fast)
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fopen' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fclose' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fread' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# 1
+# Time: 0, m00_axis_tvalid: x, m00_axis_tdata: x, m00_axis_tlast: x, m00_axis_tuser: x
+# Time: 5000, m00_axis_tvalid: 0, m00_axis_tdata: 0, m00_axis_tlast: 0, m00_axis_tuser: 0
+# ** Fatal: (vsim-160) read_image_file_axis.sv(14): Null foreign function pointer encountered when calling 'dpi_fopen'
+#    Time: 25 ns  Iteration: 1  Process: /testbench/read_image_file/#ALWAYS#41 File: read_image_file_axis.sv
+# Fatal error in Module read_image_file_axis at read_image_file_axis.sv line 14
+# 
+# HDL call sequence:
+# Stopped at read_image_file_axis.sv 14 Module read_image_file_axis
+# called from  read_image_file_axis.sv 53 Module read_image_file_axis
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at read_image_file_axis.sv 14 Module read_image_file_axis
+# called from  read_image_file_axis.sv 53 Module read_image_file_axis
+# 
+# Break key hit
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at read_image_file_axis.sv 14 Module read_image_file_axis
+# called from  read_image_file_axis.sv 53 Module read_image_file_axis
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at read_image_file_axis.sv 14 Module read_image_file_axis
+# called from  read_image_file_axis.sv 53 Module read_image_file_axis
+# 
 do run.do
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:16:40 on Jul 07,2024
+# Start time: 14:44:20 on Jul 07,2024
 # vlog -reportprogress 300 -sv -work work testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 11:16:40 on Jul 07,2024, Elapsed time: 0:00:00
+# End time: 14:44:20 on Jul 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:16:40 on Jul 07,2024
+# Start time: 14:44:20 on Jul 07,2024
 # vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
 # -- Compiling module read_image_file_axis
-# ** Error: (vlog-13069) read_image_file_axis.sv(78): near "[": syntax error, unexpected '[', expecting '\''.
-# End time: 11:16:41 on Jul 07,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-# ** Error: C:/questasim64_2021.1/win64/vlog failed.
-# Error in macro ./run.do line 20
-# C:/questasim64_2021.1/win64/vlog failed.
-#     while executing
-# "vlog -sv -work work read_image_file_axis.sv"
-#     ("eval" body line 1)
-#     invoked from within
-# "eval "$command $file""
-#     (procedure "compile_files" line 5)
-#     invoked from within
-# "compile_files "sv_files.txt" "vlog -sv -work work""
+# 
+# Top level modules:
+# 	read_image_file_axis
+# End time: 14:44:20 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:44:20 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work video_pattern_gen_axis.sv 
+# -- Compiling module video_pattern_gen_axis
+# 
+# Top level modules:
+# 	video_pattern_gen_axis
+# End time: 14:44:20 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:44:20 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/layer_wrapper_template.v 
+# -- Compiling module passthrough_axis
+# 
+# Top level modules:
+# 	passthrough_axis
+# End time: 14:44:20 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:44:20 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/M00_AXIS.v 
+# -- Compiling module M00_AXIS
+# 
+# Top level modules:
+# 	M00_AXIS
+# End time: 14:44:20 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:44:20 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/S00_AXIS.v 
+# -- Compiling module S00_AXIS
+# 
+# Top level modules:
+# 	S00_AXIS
+# End time: 14:44:20 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:44:20 on Jul 07,2024
+# vopt -reportprogress 300 work.testbench -o tb_optimized "+acc" 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module read_image_file_axis
+# -- Loading module passthrough_axis
+# -- Loading module S00_AXIS
+# -- Loading module M00_AXIS
+# Optimizing 5 design-units (inlining 0/5 module instances):
+# -- Optimizing module read_image_file_axis(fast)
+# ** Note: (vopt-143) Recognized 1 FSM in module "read_image_file_axis(fast)".
+# -- Optimizing module S00_AXIS(fast)
+# -- Optimizing module M00_AXIS(fast)
+# -- Optimizing module passthrough_axis(fast)
+# ** Warning: ../HDL/layer_wrapper_template.v(47): (vopt-2685) [TFMPC] - Too few port connections for 'S00_AXIS_inst'.  Expected 14, found 13.
+# ** Warning: ../HDL/layer_wrapper_template.v(47): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
+# -- Optimizing module testbench(fast)
+# Optimized design name is tb_optimized
+# End time: 14:44:21 on Jul 07,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# End time: 14:44:23 on Jul 07,2024, Elapsed time: 0:09:18
+# Errors: 1, Warnings: 3
+# vsim -lib work tb_optimized 
+# Start time: 14:44:23 on Jul 07,2024
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.read_image_file_axis(fast)
+# Loading work.passthrough_axis(fast)
+# Loading work.S00_AXIS(fast)
+# Loading work.M00_AXIS(fast)
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fopen' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fclose' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fread' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# 1
+# Time: 0, m00_axis_tvalid: x, m00_axis_tdata: x, m00_axis_tlast: x, m00_axis_tuser: x
+# Time: 5000, m00_axis_tvalid: 0, m00_axis_tdata: 0, m00_axis_tlast: 0, m00_axis_tuser: 0
+# ** Fatal: (vsim-160) read_image_file_axis.sv(14): Null foreign function pointer encountered when calling 'dpi_fopen'
+#    Time: 25 ns  Iteration: 1  Process: /testbench/read_image_file/#ALWAYS#41 File: read_image_file_axis.sv
+# Fatal error in Module read_image_file_axis at read_image_file_axis.sv line 14
+# 
+# HDL call sequence:
+# Stopped at read_image_file_axis.sv 14 Module read_image_file_axis
+# called from  read_image_file_axis.sv 53 Module read_image_file_axis
+# 
 do run.do
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:17:39 on Jul 07,2024
+# Start time: 14:51:35 on Jul 07,2024
 # vlog -reportprogress 300 -sv -work work testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 11:17:39 on Jul 07,2024, Elapsed time: 0:00:00
+# End time: 14:51:35 on Jul 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 11:17:39 on Jul 07,2024
+# Start time: 14:51:35 on Jul 07,2024
 # vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
 # -- Compiling module read_image_file_axis
-# ** Error: (vlog-13069) read_image_file_axis.sv(79): near "[": syntax error, unexpected '[', expecting '\''.
-# End time: 11:17:39 on Jul 07,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/questasim64_2021.1/win64/vlog failed.
-# Error in macro ./run.do line 20
-# C:/questasim64_2021.1/win64/vlog failed.
+# 
+# Top level modules:
+# 	read_image_file_axis
+# End time: 14:51:35 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:51:35 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work video_pattern_gen_axis.sv 
+# -- Compiling module video_pattern_gen_axis
+# 
+# Top level modules:
+# 	video_pattern_gen_axis
+# End time: 14:51:35 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:51:35 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/layer_wrapper_template.v 
+# -- Compiling module passthrough_axis
+# 
+# Top level modules:
+# 	passthrough_axis
+# End time: 14:51:35 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:51:35 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/M00_AXIS.v 
+# -- Compiling module M00_AXIS
+# 
+# Top level modules:
+# 	M00_AXIS
+# End time: 14:51:35 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:51:35 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/S00_AXIS.v 
+# -- Compiling module S00_AXIS
+# 
+# Top level modules:
+# 	S00_AXIS
+# End time: 14:51:36 on Jul 07,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:51:36 on Jul 07,2024
+# vopt -reportprogress 300 work.testbench -o tb_optimized "+acc" 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module read_image_file_axis
+# -- Loading module passthrough_axis
+# -- Loading module S00_AXIS
+# -- Loading module M00_AXIS
+# Optimizing 5 design-units (inlining 0/5 module instances):
+# -- Optimizing module read_image_file_axis(fast)
+# ** Note: (vopt-143) Recognized 1 FSM in module "read_image_file_axis(fast)".
+# -- Optimizing module S00_AXIS(fast)
+# -- Optimizing module M00_AXIS(fast)
+# -- Optimizing module passthrough_axis(fast)
+# ** Warning: ../HDL/layer_wrapper_template.v(47): (vopt-2685) [TFMPC] - Too few port connections for 'S00_AXIS_inst'.  Expected 14, found 13.
+# ** Warning: ../HDL/layer_wrapper_template.v(47): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
+# -- Optimizing module testbench(fast)
+# Optimized design name is tb_optimized
+# End time: 14:51:36 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 14:51:38 on Jul 07,2024, Elapsed time: 0:07:15
+# Errors: 1, Warnings: 3
+# vsim -lib work tb_optimized 
+# Start time: 14:51:38 on Jul 07,2024
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.read_image_file_axis(fast)
+# Loading work.passthrough_axis(fast)
+# Loading work.S00_AXIS(fast)
+# Loading work.M00_AXIS(fast)
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fopen' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fclose' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fread' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# ** Error: invalid command name "ldpi"
+# Error in macro ./run.do line 30
+# invalid command name "ldpi"
 #     while executing
-# "vlog -sv -work work read_image_file_axis.sv"
-#     ("eval" body line 1)
-#     invoked from within
-# "eval "$command $file""
-#     (procedure "compile_files" line 5)
-#     invoked from within
-# "compile_files "sv_files.txt" "vlog -sv -work work""
+# "ldpi dpi_file_operations.dll"
+do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:52:40 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 14:52:40 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:52:40 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
+# -- Compiling module read_image_file_axis
+# 
+# Top level modules:
+# 	read_image_file_axis
+# End time: 14:52:40 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:52:41 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work video_pattern_gen_axis.sv 
+# -- Compiling module video_pattern_gen_axis
+# 
+# Top level modules:
+# 	video_pattern_gen_axis
+# End time: 14:52:41 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:52:41 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/layer_wrapper_template.v 
+# -- Compiling module passthrough_axis
+# 
+# Top level modules:
+# 	passthrough_axis
+# End time: 14:52:41 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:52:41 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/M00_AXIS.v 
+# -- Compiling module M00_AXIS
+# 
+# Top level modules:
+# 	M00_AXIS
+# End time: 14:52:41 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:52:41 on Jul 07,2024
+# vlog -reportprogress 300 -work work ../HDL/S00_AXIS.v 
+# -- Compiling module S00_AXIS
+# 
+# Top level modules:
+# 	S00_AXIS
+# End time: 14:52:41 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:52:41 on Jul 07,2024
+# vopt -reportprogress 300 work.testbench -o tb_optimized "+acc" 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module read_image_file_axis
+# -- Loading module passthrough_axis
+# -- Loading module S00_AXIS
+# -- Loading module M00_AXIS
+# Optimizing 5 design-units (inlining 0/5 module instances):
+# -- Optimizing module read_image_file_axis(fast)
+# ** Note: (vopt-143) Recognized 1 FSM in module "read_image_file_axis(fast)".
+# -- Optimizing module S00_AXIS(fast)
+# -- Optimizing module M00_AXIS(fast)
+# -- Optimizing module passthrough_axis(fast)
+# ** Warning: ../HDL/layer_wrapper_template.v(47): (vopt-2685) [TFMPC] - Too few port connections for 'S00_AXIS_inst'.  Expected 14, found 13.
+# ** Warning: ../HDL/layer_wrapper_template.v(47): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
+# -- Optimizing module testbench(fast)
+# Optimized design name is tb_optimized
+# End time: 14:52:41 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 14:52:43 on Jul 07,2024, Elapsed time: 0:01:05
+# Errors: 1, Warnings: 3
+# vsim -lib work tb_optimized 
+# Start time: 14:52:43 on Jul 07,2024
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.read_image_file_axis(fast)
+# Loading work.passthrough_axis(fast)
+# Loading work.S00_AXIS(fast)
+# Loading work.M00_AXIS(fast)
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fopen' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fclose' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# ** Warning: (vsim-3770) Failed to find user specified function 'dpi_fread' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/read_image_file File: read_image_file_axis.sv
+# End time: 14:52:49 on Jul 07,2024, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 3
+# vsim -lib work tb_optimized -sv_lib dpi_file_operations 
+# Start time: 14:52:49 on Jul 07,2024
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.read_image_file_axis(fast)
+# Loading work.passthrough_axis(fast)
+# Loading work.S00_AXIS(fast)
+# Loading work.M00_AXIS(fast)
+# Loading .\dpi_file_operations.dll
+# 1
+# Time: 0, m00_axis_tvalid: x, m00_axis_tdata: x, m00_axis_tlast: x, m00_axis_tuser: x
+# Time: 5000, m00_axis_tvalid: 0, m00_axis_tdata: 0, m00_axis_tlast: 0, m00_axis_tuser: 0
+# Time: 25000, m00_axis_tvalid: 0, m00_axis_tdata: x, m00_axis_tlast: x, m00_axis_tuser: x
+# Time: 105000, m00_axis_tvalid: 1, m00_axis_tdata: 0, m00_axis_tlast: 0, m00_axis_tuser: 0
+# Time: 125000, m00_axis_tvalid: 1, m00_axis_tdata: 0, m00_axis_tlast: 0, m00_axis_tuser: 1
+# Time: 135000, m00_axis_tvalid: 1, m00_axis_tdata: 0, m00_axis_tlast: 0, m00_axis_tuser: 0
+# ** Note: $finish    : testbench.sv(90)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at testbench.sv line 90

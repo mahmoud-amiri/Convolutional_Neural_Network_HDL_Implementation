@@ -76,7 +76,7 @@ module read_image_file_axis #(
                         if (dpi_fread(data_byte, file) == 1) header.channels[31:24] = data_byte;
 
                         num_pixels <= header.rows * header.cols * header.channels;
-                        image_data = new[byte[num_pixels]]; // Correctly allocate dynamic array
+                        image_data = new[num_pixels]; // Correctly allocate dynamic array
                         state <= READ_DATA;
                     end else begin
                         $display("Error reading header from file.");

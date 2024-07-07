@@ -21,10 +21,13 @@ compile_files "sv_files.txt" "vlog -sv -work work"
 compile_files "verilog_files.txt" "vlog -work work"
 
 # Optimize the testbench design
-vopt work.FIR_filter_tb -o tb_optimized +acc
+vopt work.testbench -o tb_optimized +acc
 
 # Load and simulate the testbench
 vsim -lib work tb_optimized
+
+# Load and simulate the testbench with the DPI shared library (DLL)
+vsim -lib work tb_optimized -sv_lib dpi_file_operations
 
 # Setup for simulation
 set NoQuitOnFinish 1
