@@ -1,0 +1,177 @@
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:08:47 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbech.sv 
+# ** Error: (vlog-7) Failed to open design unit file "testbech.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 11:08:47 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 20
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog -sv -work work testbech.sv"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval "$command $file""
+#     (procedure "compile_files" line 5)
+#     invoked from within
+# "compile_files "sv_files.txt" "vlog -sv -work work""
+do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:10:30 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:10:30 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:10:30 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
+# -- Compiling module read_image_file_axis
+# ** Error: (vlog-13069) read_image_file_axis.sv(14): near "$fopen": syntax error, unexpected SYSTEM_IDENTIFIER, expecting IDENTIFIER.
+# ** Error: (vlog-13069) read_image_file_axis.sv(15): near "$fclose": syntax error, unexpected SYSTEM_IDENTIFIER, expecting IDENTIFIER.
+# ** Error: (vlog-13069) read_image_file_axis.sv(16): near "$fread": syntax error, unexpected SYSTEM_IDENTIFIER, expecting IDENTIFIER.
+# End time: 11:10:30 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 20
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog -sv -work work read_image_file_axis.sv"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval "$command $file""
+#     (procedure "compile_files" line 5)
+#     invoked from within
+# "compile_files "sv_files.txt" "vlog -sv -work work""
+do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:14:17 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:14:17 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:14:17 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
+# -- Compiling module read_image_file_axis
+# ** Error: read_image_file_axis.sv(36): (vlog-13003) Enum member 'DONE' has value that is outside the representable range of the enum.
+# ** Error: read_image_file_axis.sv(89): (vlog-60) Non-blocking assignment to elements of dynamic arrays is not currently supported.
+# ** Warning: read_image_file_axis.sv(123): (vlog-2240) Treating stand-alone use of function 'dpi_fclose' as an implicit VOID cast.
+# End time: 11:14:17 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 20
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog -sv -work work read_image_file_axis.sv"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval "$command $file""
+#     (procedure "compile_files" line 5)
+#     invoked from within
+# "compile_files "sv_files.txt" "vlog -sv -work work""
+do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:15:41 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:15:41 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:15:42 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
+# -- Compiling module read_image_file_axis
+# ** Error: (vlog-13069) read_image_file_axis.sv(78): near "unsigned": syntax error, unexpected unsigned, expecting '\''.
+# End time: 11:15:42 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 20
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog -sv -work work read_image_file_axis.sv"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval "$command $file""
+#     (procedure "compile_files" line 5)
+#     invoked from within
+# "compile_files "sv_files.txt" "vlog -sv -work work""
+do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:16:40 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:16:40 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:16:40 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
+# -- Compiling module read_image_file_axis
+# ** Error: (vlog-13069) read_image_file_axis.sv(78): near "[": syntax error, unexpected '[', expecting '\''.
+# End time: 11:16:41 on Jul 07,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 20
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog -sv -work work read_image_file_axis.sv"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval "$command $file""
+#     (procedure "compile_files" line 5)
+#     invoked from within
+# "compile_files "sv_files.txt" "vlog -sv -work work""
+do run.do
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:17:39 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:17:39 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:17:39 on Jul 07,2024
+# vlog -reportprogress 300 -sv -work work read_image_file_axis.sv 
+# -- Compiling module read_image_file_axis
+# ** Error: (vlog-13069) read_image_file_axis.sv(79): near "[": syntax error, unexpected '[', expecting '\''.
+# End time: 11:17:39 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 20
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog -sv -work work read_image_file_axis.sv"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval "$command $file""
+#     (procedure "compile_files" line 5)
+#     invoked from within
+# "compile_files "sv_files.txt" "vlog -sv -work work""

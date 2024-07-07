@@ -1,0 +1,35 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/GitHub/Convolutional_Neural_Network_VHDL_Implementation/TB
+vtestbench
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1720343859
+!i10b 1
+!s100 lYiE=ZZ7:kBQd3WeXA[@U3
+IMggdf1]LZa;EAH8RWd=_f2
+S1
+R0
+w1720342202
+8testbench.sv
+Ftestbench.sv
+!i122 0
+L0 3 91
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2021.1;73
+r1
+!s85 0
+31
+!s108 1720343859.000000
+!s107 testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|testbench.sv|
+!i113 0
+o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0
