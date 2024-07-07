@@ -4,7 +4,7 @@ module M00_AXIS #(
 ) (
 
     input wire wr_en,
-    output reg full,
+    output wire full,
     input wire [C_M_AXIS_TDATA_WIDTH-1:0] data_in,
     input wire last_in,
 	input wire user_in,
@@ -29,7 +29,7 @@ module M00_AXIS #(
     reg [$clog2(C_M_AXIS_FIFO_DEPTH+1):0] fifo_cnt;
 	// wire rd_en;
 	// reg [C_M_AXIS_TDATA_WIDTH-1:0] data_out;
-	reg empty;
+	wire empty;
     // Write operation
     always @(posedge M_AXIS_ACLK) begin
         if (!M_AXIS_ARESETN) begin

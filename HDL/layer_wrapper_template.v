@@ -29,16 +29,16 @@ module passthrough_axis #(
 );
 
     // Internal signals
-    reg [C_AXIS_TDATA_WIDTH-1 : 0] data_in;
-    reg user_in;
-    reg last_in;
-    reg empty;
+    wire [C_AXIS_TDATA_WIDTH-1 : 0] data_in; // Changed to wire
+    wire user_in; // Changed to wire
+    wire last_in; // Changed to wire
+    wire empty; // Changed to wire
     reg read_en;
     reg [C_AXIS_TDATA_WIDTH-1 : 0] data_out;
     reg user_out;
     reg last_out;
     reg wr_en;
-    reg full;
+    wire full; // Changed to wire
 
     // Instantiation of Axi Bus Interface S00_AXIS
     S00_AXIS # ( 
