@@ -1,5 +1,5 @@
 % Read the image
-imageFile = 'cameraman.tif'; % specify your image file
+imageFile = 'flower.jpg'; % specify your image file
 img = imread(imageFile);
 
 % Get the size of the image

@@ -11,7 +11,7 @@ z2
 cModel Technology
 Z0 dD:/GitHub/Convolutional_Neural_Network_VHDL_Implementation/TB
 vM00_AXIS
-Z1 !s110 1720439245
+Z1 !s110 1720439676
 !i10b 1
 !s100 NIYRaoElE^5RA]7bMLX=b3
 I^k];DljDBgC8KC4_]?_E@0
@@ -26,7 +26,7 @@ Z4 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z5 !s108 1720439245.000000
+Z5 !s108 1720439676.000000
 !s107 ../HDL/M00_AXIS.v|
 !s90 -reportprogress|300|-work|work|../HDL/M00_AXIS.v|
 !i113 0
@@ -80,7 +80,7 @@ R5
 Z9 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R7
 vS00_AXIS
-R1
+Z10 !s110 1720439677
 !i10b 1
 !s100 nMKWWR3UghjTz:Q?hZ4m12
 Id0`dTzoaiQ]R7^C<=K5060
@@ -95,7 +95,7 @@ R4
 r1
 !s85 0
 31
-R5
+!s108 1720439677.000000
 !s107 ../HDL/S00_AXIS.v|
 !s90 -reportprogress|300|-work|work|../HDL/S00_AXIS.v|
 !i113 0
@@ -103,8 +103,8 @@ R6
 R7
 n@s00_@a@x@i@s
 Ttb_optimized
-R1
-ViRN=O:cV9z=nNQHicKU^P0
+R10
+VTZCHU4`0zZDfOT<WAJ6;X2
 04 9 4 work testbench fast 0
 !s124 OEM100
 o+acc

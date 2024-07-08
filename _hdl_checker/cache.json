@@ -126,6 +126,11 @@
   ],
   "_added_libraries": [
    {
+    "name": "not_in_project",
+    "case_sensitive": true,
+    "__class__": "Identifier"
+   },
+   {
     "name": "default_library",
     "case_sensitive": false,
     "__class__": "Identifier"
@@ -676,6 +681,10 @@
     "__class__": "Path"
    },
    {
+    "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\HDL\\layer_wrapper_template.v",
+    "__class__": "Path"
+   },
+   {
     "name": "C:\\Users\\mamir\\AppData\\Local\\Temp\\tmpik9871ht.vhd",
     "__class__": "Path"
    },
@@ -721,6 +730,10 @@
    },
    {
     "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\HDL\\AdderTree.v",
+    "__class__": "Path"
+   },
+   {
+    "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\HDL\\LineBuffer.v",
     "__class__": "Path"
    },
    {
@@ -1024,6 +1037,25 @@
    },
    {
     "owner": {
+     "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\TB\\testbench_template.sv",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "testbench",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      2,
+      7
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
+   },
+   {
+    "owner": {
      "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\HDL\\ConvolutionWrapper.v",
      "__class__": "Path"
     },
@@ -1230,6 +1262,25 @@
      ]
     ],
     "__class__": "VhdlDesignUnit"
+   },
+   {
+    "owner": {
+     "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\TB\\testbench_template.sv",
+     "__class__": "Path"
+    },
+    "type_": "entity",
+    "name": {
+     "name": "read_image_file_axis",
+     "case_sensitive": true,
+     "__class__": "VerilogIdentifier"
+    },
+    "locations": [
+     [
+      46,
+      51
+     ]
+    ],
+    "__class__": "VerilogDesignUnit"
    },
    {
     "owner": {

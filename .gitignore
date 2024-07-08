@@ -1,1 +1,5 @@
 _hdl_checker
+TB/vsim.wlf
+TB/transcript
+TB/work/*
+TB/work/

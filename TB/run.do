@@ -26,8 +26,6 @@ vopt work.testbench -o tb_optimized +acc
 # Load and simulate the testbench
 vsim -lib work tb_optimized
 
-# Load and simulate the testbench with the DPI shared library (DLL)
-vsim -lib work tb_optimized -sv_lib dpi_file_operations
 
 # Setup for simulation
 set NoQuitOnFinish 1
