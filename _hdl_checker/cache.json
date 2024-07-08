@@ -131,6 +131,11 @@
     "__class__": "Identifier"
    },
    {
+    "name": "work",
+    "case_sensitive": false,
+    "__class__": "Identifier"
+   },
+   {
     "name": "default_library",
     "case_sensitive": false,
     "__class__": "Identifier"
@@ -565,6 +570,10 @@
     "__class__": "Path"
    },
    {
+    "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\HDL\\S00_AXIS.v",
+    "__class__": "Path"
+   },
+   {
     "name": "C:\\Users\\mamir\\AppData\\Local\\Temp\\tmp5n8anrab.vhd",
     "__class__": "Path"
    },
@@ -677,6 +686,10 @@
     "__class__": "Path"
    },
    {
+    "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\HDL\\macro.v",
+    "__class__": "Path"
+   },
+   {
     "name": "C:\\Users\\mamir\\AppData\\Local\\Temp\\tmpjnrngscc.vhd",
     "__class__": "Path"
    },
@@ -773,7 +786,15 @@
     "__class__": "Path"
    },
    {
+    "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\HDL\\macro_example.v",
+    "__class__": "Path"
+   },
+   {
     "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\VHDL\\LineBuffer.vhd",
+    "__class__": "Path"
+   },
+   {
+    "name": "d:\\GitHub\\Convolutional_Neural_Network_VHDL_Implementation\\HDL\\M00_AXIS.v",
     "__class__": "Path"
    },
    {
