@@ -3,8 +3,8 @@
 module testbench;
 
     // Parameters
-    parameter C_S_AXIS_TDATA_WIDTH = 32;
-    parameter C_AXIS_TDATA_WIDTH = 32;
+    parameter C_S_AXIS_TDATA_WIDTH = 24;
+    parameter C_AXIS_TDATA_WIDTH = 24;
     parameter C_AXIS_FIFO_DEPTH = 16;
 
     // Clock and reset

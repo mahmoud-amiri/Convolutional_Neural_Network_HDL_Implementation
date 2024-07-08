@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module read_image_file_axis #(
-    parameter C_S_AXIS_TDATA_WIDTH = 32,
+    parameter C_S_AXIS_TDATA_WIDTH = 24,
     parameter FILENAME = "image_with_header.txt"
 )(
     input wire                      clk,
@@ -20,7 +20,7 @@ module read_image_file_axis #(
     } image_header_t;
 
     image_header_t header;
-    integer image_data[]; // Declare dynamic array
+    byte image_data[]; // Declare dynamic array of bytes
 
     typedef enum logic [1:0] {
         IDLE = 2'b00,
@@ -32,7 +32,7 @@ module read_image_file_axis #(
     state_t state;
     integer file, num_pixels, idx;
     integer r;
-    integer value;
+    byte value;
 
     // Function to read image file
     function int read_image_file(input string filename);
@@ -66,19 +66,19 @@ module read_image_file_axis #(
         $display("Header: rows = %d, cols = %d, channels = %d", header.rows, header.cols, header.channels);
 
         num_pixels = header.rows * header.cols * header.channels;
-        image_data = new[num_pixels];
+        image_data = new[3 * num_pixels]; // Allocate space for 3 bytes per pixel
 
         // Read image data
         for (i = 0; i < header.rows; i = i + 1) begin
             for (j = 0; j < header.cols; j = j + 1) begin
                 for (k = 0; k < header.channels; k = k + 1) begin
-                    r = $fscanf(file, "%d ", value);
+                    r = $fscanf(file, "%h ", value);
                     if (r == 0) begin
                         $display("Error: could not read pixel data from file %s", filename);
                         $fclose(file);
                         return 0;
                     end
-                    image_data[i * header.cols * header.channels + j * header.channels + k] = value;
+                    image_data[(i * header.cols + j) * header.channels + k] = value;
                 end
             end
             r = $fgets(line, file); // Move to the next line
@@ -108,14 +108,14 @@ module read_image_file_axis #(
                     end
                 end
                 SEND_DATA: begin
-                    if (idx < num_pixels) begin
+                    if (idx < num_pixels * header.channels) begin
                         if (s_axis_tready) begin
                             s_axis_tvalid <= 1;
-                            s_axis_tdata <= {24'b0, image_data[idx]}; // Extend byte to 32 bits
-                            s_axis_tlast <= ((idx + 1) % (header.cols * header.channels) == 0);
+                            s_axis_tdata <= {image_data[idx], image_data[idx+1], image_data[idx+2]}; // Pack 3 bytes into 32 bits
+                            s_axis_tlast <= ((idx + 3) % (header.cols * header.channels) == 0);
                             s_axis_tuser <= (idx == 0);
-                            idx <= idx + 1;
-                            if (idx == num_pixels) begin
+                            idx <= idx + 3;
+                            if (idx >= num_pixels * header.channels) begin
                                 state <= IDLE; // Transition to IDLE after sending data
                             end
                         end else begin
