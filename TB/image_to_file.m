@@ -1,5 +1,3 @@
-% MATLAB script to write the content of an image to a file with size header
-
 % Read the image
 imageFile = 'cameraman.tif'; % specify your image file
 img = imread(imageFile);
@@ -8,18 +6,25 @@ img = imread(imageFile);
 [rows, cols, channels] = size(img);
 
 % Open the file to write
-outputFile = 'image_with_header.bin'; % specify your output file
+outputFile = 'image_with_header.txt'; % specify your output file
 fileID = fopen(outputFile, 'w');
 
 % Write the header (size of the image)
-fwrite(fileID, rows, 'uint32');
-fwrite(fileID, cols, 'uint32');
-fwrite(fileID, channels, 'uint32');
+fprintf(fileID, '%d ', rows);
+fprintf(fileID, '%d ', cols);
+fprintf(fileID, '%d ', channels);
 
 % Write the image data
-fwrite(fileID, img, 'uint8');
+for i = 1:rows
+    for j = 1:cols
+        for k = 1:channels
+            fprintf(fileID, '%d ', img(i, j, k));
+        end
+    end
+    fprintf(fileID, '\n');
+end
 
 % Close the file
 fclose(fileID);
 
-disp('Image and header written to file successfully.');
+disp('Image and header written to text file successfully.');

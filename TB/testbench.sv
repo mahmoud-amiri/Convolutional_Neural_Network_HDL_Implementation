@@ -47,7 +47,7 @@ module testbench;
     // Instantiate the read_image_file_axis module
     read_image_file_axis #(
         .C_S_AXIS_TDATA_WIDTH(C_S_AXIS_TDATA_WIDTH),
-        .FILENAME("image_with_header.bin")
+        .FILENAME("image_with_header.txt")
     ) read_image_file (
         .clk(clk),
         .reset_n(resetn),
