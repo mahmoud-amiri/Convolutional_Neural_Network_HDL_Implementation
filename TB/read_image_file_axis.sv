@@ -63,7 +63,7 @@ module read_image_file_axis #(
             $fclose(file);
             return 0;
         end
-        $display("Header: rows = %d, cols = %d, channels = %d", header.rows, header.cols, header.channels);
+        // $display("Header: rows = %d, cols = %d, channels = %d", header.rows, header.cols, header.channels);
 
         num_pixels = header.rows * header.cols * header.channels;
         image_data = new[3 * num_pixels]; // Allocate space for 3 bytes per pixel
@@ -84,7 +84,7 @@ module read_image_file_axis #(
             r = $fgets(line, file); // Move to the next line
         end
         $fclose(file);
-        $display("Image data read successfully, num_pixels = %d", num_pixels);
+        // $display("Image data read successfully, num_pixels = %d", num_pixels);
         return 1;
     endfunction
 

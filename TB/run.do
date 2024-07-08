@@ -21,7 +21,7 @@ compile_files "sv_files.txt" "vlog -sv -work work"
 compile_files "verilog_files.txt" "vlog -work work"
 
 # Optimize the testbench design
-vopt work.testbench -o tb_optimized +acc
+vopt work.testbench_zero_padding -o tb_optimized +acc
 
 # Load and simulate the testbench
 vsim -lib work tb_optimized

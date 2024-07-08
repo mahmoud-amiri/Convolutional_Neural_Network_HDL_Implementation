@@ -1,7 +1,7 @@
 % Read the image
 imageFile = 'flower.jpg'; % specify your image file
 img = imread(imageFile);
-
+img = ones(10,10,3);
 % Get the size of the image
 [rows, cols, channels] = size(img);
 
