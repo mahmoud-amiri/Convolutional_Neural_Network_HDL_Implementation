@@ -3,3 +3,6 @@
 ../HDL/S00_AXIS.v
 ../HDL/zero_padding_axis.v
 ../HDL/axi_stream_video_size.v
+../HDL/relu_axis.v
+../HDL/LineBuffer.v
+../HDL/PingPongController.v

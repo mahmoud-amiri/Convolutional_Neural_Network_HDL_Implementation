@@ -166,7 +166,7 @@ module zero_padding_axis #(
     end
 
     // Control s00_axis_tready signal
-    assign s00_axis_tready = (state == LINE_PAD && pixel_count >= NUM_PADDING && pixel_count < (IMG_WIDTH + NUM_PADDING)) ? !full : 1'b0;
-    assign m00_axis_tvalid = wr_en;
+    // assign s00_axis_tready = (state == LINE_PAD && pixel_count >= NUM_PADDING && pixel_count < (IMG_WIDTH + NUM_PADDING)) ? !full : 1'b0;
+    // assign m00_axis_tvalid = wr_en;
 
 endmodule

@@ -2,3 +2,6 @@ testbench_template.sv
 read_image_file_axis.sv
 video_pattern_gen_axis.sv
 testbench_zero_padding.sv
+testbench_relu.sv
+LineBuffer_tb.sv
+PingPongController_tb.sv
