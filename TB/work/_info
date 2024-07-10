@@ -11,7 +11,7 @@ z2
 cModel Technology
 Z0 dD:/GitHub/Convolutional_Neural_Network_VHDL_Implementation/TB
 vaxi_stream_video_size
-Z1 !s110 1720625862
+Z1 !s110 1720629849
 !i10b 1
 !s100 PMO:_3_=o2W0fFWFb87HF2
 I;ObQaZAFaBi]zWYP3mlEN2
@@ -26,23 +26,45 @@ Z3 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z4 !s108 1720625862.000000
+Z4 !s108 1720629849.000000
 !s107 ../HDL/axi_stream_video_size.v|
 !s90 -reportprogress|300|-work|work|../HDL/axi_stream_video_size.v|
 !i113 0
 Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z6 tCvgOpt 0
+vdual_port_mem
+R1
+!i10b 1
+!s100 l<?8nF3WG2UAfDXkGfRTE0
+I;nGQUWX;0oh:EWgaQ0VoF3
+R0
+w1720627735
+8../HDL/dual_port_mem.v
+F../HDL/dual_port_mem.v
+!i122 15
+L0 2 20
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 ../HDL/dual_port_mem.v|
+!s90 -reportprogress|300|-work|work|../HDL/dual_port_mem.v|
+!i113 0
+R5
+R6
 vLineBuffer
 R1
 !i10b 1
-!s100 mPf^dYDX=JBDJz51]lCVR0
-I3K3:Y?GPAb;Ub=Ho3gIoz1
+!s100 zj:MRU7`oeaFWl53;2WLJ3
+IGQ`a1D?^jN5B4a8ZLD9a=3
 R0
-w1720616328
+w1720628459
 8../HDL/LineBuffer.v
 F../HDL/LineBuffer.v
 !i122 13
-L0 1 78
+L0 1 88
 R2
 R3
 r1
@@ -57,7 +79,7 @@ R6
 n@line@buffer
 vLineBuffer_tb
 Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z8 !s110 1720625861
+Z8 !s110 1720629848
 !i10b 1
 !s100 A5@WD]56C?UkLZ9Eoaf@<2
 I4zAaZNkIGA^QG<Uz_EG:11
@@ -73,7 +95,7 @@ R3
 r1
 !s85 0
 31
-Z10 !s108 1720625861.000000
+Z10 !s108 1720629848.000000
 !s107 LineBuffer_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|LineBuffer_tb.sv|
 !i113 0
@@ -81,7 +103,7 @@ Z11 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R6
 n@line@buffer_tb
 vM00_AXIS
-R8
+R1
 !i10b 1
 !s100 NIYRaoElE^5RA]7bMLX=b3
 I^k];DljDBgC8KC4_]?_E@0
@@ -96,7 +118,7 @@ R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 ../HDL/M00_AXIS.v|
 !s90 -reportprogress|300|-work|work|../HDL/M00_AXIS.v|
 !i113 0
@@ -104,7 +126,7 @@ R5
 R6
 n@m00_@a@x@i@s
 vpassthrough_axis
-R8
+R1
 !i10b 1
 !s100 Z34OfbRQ:BG=nCnkKR8je2
 IUW08O6QAkSClmDoR<]g[o2
@@ -119,7 +141,7 @@ R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 ../HDL/layer_wrapper_template.v|
 !s90 -reportprogress|300|-work|work|../HDL/layer_wrapper_template.v|
 !i113 0
@@ -128,10 +150,10 @@ R6
 vPingPongController
 R1
 !i10b 1
-!s100 a@m2C@dmafJC^3nHaXcJ83
-I11h]k<hCdMen6DFcEYlDP3
+!s100 14PZLFb[CEZAeUDmgg7D^2
+IFZ8_Eiz[5ZRJKf:CiUnX73
 R0
-w1720625852
+w1720629841
 8../HDL/PingPongController.v
 F../HDL/PingPongController.v
 !i122 14
@@ -150,7 +172,7 @@ R6
 n@ping@pong@controller
 vPingPongController_tb
 R7
-R8
+R1
 !i10b 1
 !s100 3dSY2aFV>8VXQ`lDQU;Em0
 IiZad^;^log;72OOeFjAf[1
@@ -220,7 +242,7 @@ R4
 R5
 R6
 vS00_AXIS
-R8
+R1
 !i10b 1
 !s100 nMKWWR3UghjTz:Q?hZ4m12
 Id0`dTzoaiQ]R7^C<=K5060
@@ -235,7 +257,7 @@ R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 ../HDL/S00_AXIS.v|
 !s90 -reportprogress|300|-work|work|../HDL/S00_AXIS.v|
 !i113 0
@@ -243,8 +265,8 @@ R5
 R6
 n@s00_@a@x@i@s
 Ttb_optimized
-!s110 1720625863
-V1K3TA2GWknKYgT`<i6Q>Z3
+!s110 1720629850
+VB3Ll97Uj@e2EGOL::f_hf0
 04 21 4 work PingPongController_tb fast 0
 !s124 OEM100
 o+acc
@@ -253,7 +275,7 @@ ntb_optimized
 OL;O;2021.1;73
 vtestbench
 R7
-!s110 1720625860
+R8
 !i10b 1
 !s100 `edb>^n43kV[cf0gaeRog0
 I?ZF=4@j:^2EW;NjD_2?kd3
@@ -269,7 +291,7 @@ R3
 r1
 !s85 0
 31
-!s108 1720625860.000000
+R10
 !s107 testbench_template.sv|
 !s90 -reportprogress|300|-sv|-work|work|testbench_template.sv|
 !i113 0

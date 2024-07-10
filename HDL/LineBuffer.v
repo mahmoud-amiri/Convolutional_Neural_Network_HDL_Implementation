@@ -12,25 +12,18 @@ module LineBuffer #(
     output [NUM_LINES*DATA_WIDTH-1:0] data_out
 );
 
-    // Dual-Port Memory Module Definition
-    module dual_port_mem (
-        input clk,
-        input reset,
-        input we,
-        input [13:0] wr_addr,
-        input [DATA_WIDTH-1:0] din,
-        input [13:0] rd_addr,
-        output reg [DATA_WIDTH-1:0] dout
-    );
-        reg [DATA_WIDTH-1:0] mem [0:16383];  // Memory array for 16K depth
-        
-        always @(posedge clk) begin
-            if (we) begin
-                mem[wr_addr] <= din;
-            end
-            dout <= mem[rd_addr];
-        end
-    endmodule
+    // module dual_port_mem #(
+    //     parameter DATA_WIDTH = 16  // Number of BRAM blocks (lines)
+    // )(
+    //     input clk,
+    //     input reset,
+    //     input we,
+    //     input [13:0] wr_addr,
+    //     input [DATA_WIDTH-1:0] din,
+    //     input [13:0] rd_addr,
+    //     output reg [DATA_WIDTH-1:0] dout
+    // );
+    // endmodule
 
     reg [NUM_LINES-1:0] we_int;
     wire [13:0] addr_split;
@@ -72,7 +65,9 @@ module LineBuffer #(
             assign addr_split = wr_addr;
             assign data_in_split = data_in;
 
-            dual_port_mem U (
+            dual_port_mem #(
+                .DATA_WIDTH(DATA_WIDTH)
+            ) U ( 
                 .clk(clk),
                 .reset(reset),
                 .we(we_int[i]),

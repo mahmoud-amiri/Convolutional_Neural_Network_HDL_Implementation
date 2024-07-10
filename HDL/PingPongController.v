@@ -12,22 +12,7 @@ module PingPongController #(
     output [NUM_LINES*DATA_WIDTH-1:0] data_out
 );
 
-    // LineBuffer module definition
-    module LineBuffer #(
-        parameter NUM_LINES = 3,
-        parameter DATA_WIDTH = 16
-    )(
-        input clk,
-        input reset,
-        input eol,
-        input we,
-        input ready,
-        input [13:0] wr_addr,
-        input [DATA_WIDTH-1:0] data_in,
-        output [NUM_LINES*DATA_WIDTH-1:0] data_out
-    );
-        // Implement LineBuffer functionality here
-    endmodule
+    
 
     reg buffer_select = 0; // Ping-pong buffer selector
     wire [NUM_LINES*DATA_WIDTH-1:0] data_out_buffer0, data_out_buffer1;
