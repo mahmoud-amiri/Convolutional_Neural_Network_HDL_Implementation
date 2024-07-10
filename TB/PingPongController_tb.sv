@@ -47,7 +47,7 @@ module PingPongController_tb;
     initial begin
         integer i, j;
         for (i = 0; i < NUM_ROWS; i = i + 1) begin
-            for (j = 0; j < NUM_COLS; j = i + 1) begin
+            for (j = 0; j < NUM_COLS; j = j + 1) begin
                 image_data[i][j] = i; // $random;
             end
         end

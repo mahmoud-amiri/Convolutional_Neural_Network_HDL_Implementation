@@ -11,7 +11,7 @@ z2
 cModel Technology
 Z0 dD:/GitHub/Convolutional_Neural_Network_VHDL_Implementation/TB
 vaxi_stream_video_size
-Z1 !s110 1720616654
+Z1 !s110 1720625862
 !i10b 1
 !s100 PMO:_3_=o2W0fFWFb87HF2
 I;ObQaZAFaBi]zWYP3mlEN2
@@ -19,14 +19,14 @@ R0
 w1720449209
 8../HDL/axi_stream_video_size.v
 F../HDL/axi_stream_video_size.v
-!i122 10
+!i122 11
 L0 3 82
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z4 !s108 1720616654.000000
+Z4 !s108 1720625862.000000
 !s107 ../HDL/axi_stream_video_size.v|
 !s90 -reportprogress|300|-work|work|../HDL/axi_stream_video_size.v|
 !i113 0
@@ -41,7 +41,7 @@ R0
 w1720616328
 8../HDL/LineBuffer.v
 F../HDL/LineBuffer.v
-!i122 12
+!i122 13
 L0 1 78
 R2
 R3
@@ -57,13 +57,13 @@ R6
 n@line@buffer
 vLineBuffer_tb
 Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z8 !s110 1720616653
+Z8 !s110 1720625861
 !i10b 1
 !s100 A5@WD]56C?UkLZ9Eoaf@<2
 I4zAaZNkIGA^QG<Uz_EG:11
 S1
 R0
-w1720616649
+w1720617992
 8LineBuffer_tb.sv
 FLineBuffer_tb.sv
 !i122 5
@@ -73,7 +73,7 @@ R3
 r1
 !s85 0
 31
-Z10 !s108 1720616653.000000
+Z10 !s108 1720625861.000000
 !s107 LineBuffer_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|LineBuffer_tb.sv|
 !i113 0
@@ -81,7 +81,7 @@ Z11 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R6
 n@line@buffer_tb
 vM00_AXIS
-R1
+R8
 !i10b 1
 !s100 NIYRaoElE^5RA]7bMLX=b3
 I^k];DljDBgC8KC4_]?_E@0
@@ -89,14 +89,14 @@ R0
 Z12 w1720357746
 8../HDL/M00_AXIS.v
 F../HDL/M00_AXIS.v
-!i122 7
+!i122 8
 R9
 R2
 R3
 r1
 !s85 0
 31
-R4
+R10
 !s107 ../HDL/M00_AXIS.v|
 !s90 -reportprogress|300|-work|work|../HDL/M00_AXIS.v|
 !i113 0
@@ -112,7 +112,7 @@ R0
 R12
 8../HDL/layer_wrapper_template.v
 F../HDL/layer_wrapper_template.v
-!i122 6
+!i122 7
 L0 3 102
 R2
 R3
@@ -125,6 +125,54 @@ R10
 !i113 0
 R5
 R6
+vPingPongController
+R1
+!i10b 1
+!s100 a@m2C@dmafJC^3nHaXcJ83
+I11h]k<hCdMen6DFcEYlDP3
+R0
+w1720625852
+8../HDL/PingPongController.v
+F../HDL/PingPongController.v
+!i122 14
+L0 1 73
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 ../HDL/PingPongController.v|
+!s90 -reportprogress|300|-work|work|../HDL/PingPongController.v|
+!i113 0
+R5
+R6
+n@ping@pong@controller
+vPingPongController_tb
+R7
+R8
+!i10b 1
+!s100 3dSY2aFV>8VXQ`lDQU;Em0
+IiZad^;^log;72OOeFjAf[1
+S1
+R0
+w1720625502
+8PingPongController_tb.sv
+FPingPongController_tb.sv
+!i122 6
+R9
+R2
+R3
+r1
+!s85 0
+31
+R10
+!s107 PingPongController_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|PingPongController_tb.sv|
+!i113 0
+R11
+R6
+n@ping@pong@controller_tb
 vread_image_file_axis
 R7
 R8
@@ -158,7 +206,7 @@ R0
 w1720466650
 8../HDL/relu_axis.v
 F../HDL/relu_axis.v
-!i122 11
+!i122 12
 L0 3 133
 R2
 R3
@@ -172,7 +220,7 @@ R4
 R5
 R6
 vS00_AXIS
-R1
+R8
 !i10b 1
 !s100 nMKWWR3UghjTz:Q?hZ4m12
 Id0`dTzoaiQ]R7^C<=K5060
@@ -180,14 +228,14 @@ R0
 w1718277740
 8../HDL/S00_AXIS.v
 F../HDL/S00_AXIS.v
-!i122 8
+!i122 9
 L0 1 85
 R2
 R3
 r1
 !s85 0
 31
-R4
+R10
 !s107 ../HDL/S00_AXIS.v|
 !s90 -reportprogress|300|-work|work|../HDL/S00_AXIS.v|
 !i113 0
@@ -195,9 +243,9 @@ R5
 R6
 n@s00_@a@x@i@s
 Ttb_optimized
-R1
-Vjmk40nLL?MzTA4[ZWUk520
-04 13 4 work LineBuffer_tb fast 0
+!s110 1720625863
+V1K3TA2GWknKYgT`<i6Q>Z3
+04 21 4 work PingPongController_tb fast 0
 !s124 OEM100
 o+acc
 R6
@@ -205,7 +253,7 @@ ntb_optimized
 OL;O;2021.1;73
 vtestbench
 R7
-R8
+!s110 1720625860
 !i10b 1
 !s100 `edb>^n43kV[cf0gaeRog0
 I?ZF=4@j:^2EW;NjD_2?kd3
@@ -221,7 +269,7 @@ R3
 r1
 !s85 0
 31
-R10
+!s108 1720625860.000000
 !s107 testbench_template.sv|
 !s90 -reportprogress|300|-sv|-work|work|testbench_template.sv|
 !i113 0
@@ -308,7 +356,7 @@ R0
 w1720448869
 8../HDL/zero_padding_axis.v
 F../HDL/zero_padding_axis.v
-!i122 9
+!i122 10
 L0 3 170
 R2
 R3

@@ -18,6 +18,7 @@ module PingPongController #(
         parameter DATA_WIDTH = 16
     )(
         input clk,
+        input reset,
         input eol,
         input we,
         input ready,
@@ -29,16 +30,16 @@ module PingPongController #(
     endmodule
 
     reg buffer_select = 0; // Ping-pong buffer selector
-    reg [NUM_LINES*DATA_WIDTH-1:0] data_out_buffer0, data_out_buffer1;
+    wire [NUM_LINES*DATA_WIDTH-1:0] data_out_buffer0, data_out_buffer1;
     reg [31:0] line_counter = 0; // Line counter for toggling buffer_select
 
     wire we_buff0, we_buff1;
 
     always @(posedge clk or posedge reset) begin
-        if (reset) begin
-            line_counter <= 0;
-            buffer_select <= 0;
-        end else begin
+        // if (reset) begin
+        //     line_counter <= 0;
+        //     buffer_select <= 0;
+        // end else begin
             if (eol) begin
                 line_counter <= line_counter + 1;
                 if (line_counter == NUM_LINES-1) begin
@@ -46,7 +47,7 @@ module PingPongController #(
                     buffer_select <= ~buffer_select;
                 end
             end
-        end
+        // end
     end
 
     assign we_buff0 = we && (~buffer_select);
@@ -58,6 +59,7 @@ module PingPongController #(
         .DATA_WIDTH(DATA_WIDTH)
     ) buffer0 (
         .clk(clk),
+        .reset(reset),
         .eol(eol),
         .we(we_buff0),
         .ready(ready),
@@ -71,6 +73,7 @@ module PingPongController #(
         .DATA_WIDTH(DATA_WIDTH)
     ) buffer1 (
         .clk(clk),
+        .reset(reset),
         .eol(eol),
         .we(we_buff1),
         .ready(ready),
