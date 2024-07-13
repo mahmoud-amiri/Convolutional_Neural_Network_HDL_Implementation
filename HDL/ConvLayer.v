@@ -41,7 +41,6 @@ module conv_layer_axis #(
     wire full;
 
     // Intermediate signals for convolution processing
-    wire [NUM_LINES*DATA_WIDTH-1:0] line_buffer_out;
     wire [DATA_WIDTH-1:0] conv_result;
     wire [13:0] wr_addr;
 
@@ -88,11 +87,14 @@ module conv_layer_axis #(
     // Extract the write address from s00_axis_tdata or use a predefined method
     assign wr_addr = s00_axis_tdata[13:0];  // Adjust this assignment as necessary
 
-    // Instantiate the PingPongController module
-    PingPongController #(
+    // Instantiate the ConvProcessing module
+    ConvProcessing #(
         .NUM_LINES(NUM_LINES),
-        .DATA_WIDTH(DATA_WIDTH)
-    ) ping_pong_controller (
+        .DATA_WIDTH(DATA_WIDTH),
+        .KERNEL_WIDTH(KERNEL_WIDTH),
+        .KERNEL_HEIGHT(KERNEL_HEIGHT),
+        .KERNEL_COEF(KERNEL_COEF)
+    ) conv_processing (
         .clk(clk),
         .reset(~resetn),
         .eol(last_in),
@@ -100,20 +102,7 @@ module conv_layer_axis #(
         .ready(m00_axis_tready),
         .wr_addr(wr_addr),
         .data_in(s00_axis_tdata[DATA_WIDTH-1:0]),
-        .data_out(line_buffer_out)
-    );
-
-    // Instantiate the SlidingWindow module
-    SlidingWindow #(
-        .KERNEL_WIDTH(KERNEL_WIDTH),
-        .KERNEL_HEIGHT(KERNEL_HEIGHT),
-        .DATA_WIDTH(DATA_WIDTH),
-        .KERNEL_COEF(KERNEL_COEF)
-    ) sliding_window (
-        .clk(clk),
-        .reset(~resetn),
-        .data_in(line_buffer_out),
-        .data_out(conv_result)
+        .conv_result(conv_result)
     );
 
     // Logic to drive the read enable and write enable signals
