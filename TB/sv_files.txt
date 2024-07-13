@@ -5,3 +5,4 @@ testbench_zero_padding.sv
 testbench_relu.sv
 LineBuffer_tb.sv
 PingPongController_tb.sv
+SlidingWindow_tb.sv

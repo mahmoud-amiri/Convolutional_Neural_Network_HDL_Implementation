@@ -11,7 +11,7 @@ z2
 cModel Technology
 Z0 dD:/GitHub/Convolutional_Neural_Network_VHDL_Implementation/TB
 vaxi_stream_video_size
-Z1 !s110 1720629849
+Z1 !s110 1720871410
 !i10b 1
 !s100 PMO:_3_=o2W0fFWFb87HF2
 I;ObQaZAFaBi]zWYP3mlEN2
@@ -19,14 +19,14 @@ R0
 w1720449209
 8../HDL/axi_stream_video_size.v
 F../HDL/axi_stream_video_size.v
-!i122 11
+!i122 12
 L0 3 82
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z4 !s108 1720629849.000000
+Z4 !s108 1720871410.000000
 !s107 ../HDL/axi_stream_video_size.v|
 !s90 -reportprogress|300|-work|work|../HDL/axi_stream_video_size.v|
 !i113 0
@@ -41,7 +41,7 @@ R0
 w1720627735
 8../HDL/dual_port_mem.v
 F../HDL/dual_port_mem.v
-!i122 15
+!i122 16
 L0 2 20
 R2
 R3
@@ -57,14 +57,14 @@ R6
 vLineBuffer
 R1
 !i10b 1
-!s100 zj:MRU7`oeaFWl53;2WLJ3
-IGQ`a1D?^jN5B4a8ZLD9a=3
+!s100 U;6HDd4JR^b_`hGEI4Y7Q3
+IL`DWbE7S:clY^>hog93f<3
 R0
-w1720628459
+w1720678486
 8../HDL/LineBuffer.v
 F../HDL/LineBuffer.v
-!i122 13
-L0 1 88
+!i122 14
+L0 1 77
 R2
 R3
 r1
@@ -79,7 +79,7 @@ R6
 n@line@buffer
 vLineBuffer_tb
 Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z8 !s110 1720629848
+R1
 !i10b 1
 !s100 A5@WD]56C?UkLZ9Eoaf@<2
 I4zAaZNkIGA^QG<Uz_EG:11
@@ -89,17 +89,17 @@ w1720617992
 8LineBuffer_tb.sv
 FLineBuffer_tb.sv
 !i122 5
-Z9 L0 1 106
+Z8 L0 1 106
 R2
 R3
 r1
 !s85 0
 31
-Z10 !s108 1720629848.000000
+Z9 !s108 1720871409.000000
 !s107 LineBuffer_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|LineBuffer_tb.sv|
 !i113 0
-Z11 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R6
 n@line@buffer_tb
 vM00_AXIS
@@ -108,11 +108,11 @@ R1
 !s100 NIYRaoElE^5RA]7bMLX=b3
 I^k];DljDBgC8KC4_]?_E@0
 R0
-Z12 w1720357746
+Z11 w1720357746
 8../HDL/M00_AXIS.v
 F../HDL/M00_AXIS.v
-!i122 8
-R9
+!i122 9
+R8
 R2
 R3
 r1
@@ -131,10 +131,10 @@ R1
 !s100 Z34OfbRQ:BG=nCnkKR8je2
 IUW08O6QAkSClmDoR<]g[o2
 R0
-R12
+R11
 8../HDL/layer_wrapper_template.v
 F../HDL/layer_wrapper_template.v
-!i122 7
+!i122 8
 L0 3 102
 R2
 R3
@@ -156,7 +156,7 @@ R0
 w1720629841
 8../HDL/PingPongController.v
 F../HDL/PingPongController.v
-!i122 14
+!i122 15
 L0 1 73
 R2
 R3
@@ -182,22 +182,22 @@ w1720625502
 8PingPongController_tb.sv
 FPingPongController_tb.sv
 !i122 6
-R9
+R8
 R2
 R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 PingPongController_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|PingPongController_tb.sv|
 !i113 0
-R11
+R10
 R6
 n@ping@pong@controller_tb
 vread_image_file_axis
 R7
-R8
+Z12 !s110 1720871409
 !i10b 1
 !s100 ESSo`eJLMJ=IJO0hKAR0H1
 I^>kl=X@4oR090a5UjFVdE3
@@ -213,11 +213,11 @@ R3
 r1
 !s85 0
 31
-R10
+R9
 !s107 read_image_file_axis.sv|
 !s90 -reportprogress|300|-sv|-work|work|read_image_file_axis.sv|
 !i113 0
-R11
+R10
 R6
 vrelu_axis
 R1
@@ -228,7 +228,7 @@ R0
 w1720466650
 8../HDL/relu_axis.v
 F../HDL/relu_axis.v
-!i122 12
+!i122 13
 L0 3 133
 R2
 R3
@@ -250,7 +250,7 @@ R0
 w1718277740
 8../HDL/S00_AXIS.v
 F../HDL/S00_AXIS.v
-!i122 9
+!i122 10
 L0 1 85
 R2
 R3
@@ -264,10 +264,58 @@ R4
 R5
 R6
 n@s00_@a@x@i@s
+vSlidingWindow
+R1
+!i10b 1
+!s100 Vf5;PGEK8WWMF5Ua@fAo43
+IXeYkX__Z:Kbzz`a]JI_H71
+R0
+w1720864459
+8../HDL/SlidingWindow.v
+F../HDL/SlidingWindow.v
+!i122 17
+L0 1 96
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 ../HDL/SlidingWindow.v|
+!s90 -reportprogress|300|-work|work|../HDL/SlidingWindow.v|
+!i113 0
+R5
+R6
+n@sliding@window
+vSlidingWindow_tb
+R7
+R1
+!i10b 1
+!s100 K4_5?g46koK]o;L50lkjA1
+IDZ63^fz^F6eXgdPhU5[>F3
+S1
+R0
+w1720871400
+8SlidingWindow_tb.sv
+FSlidingWindow_tb.sv
+!i122 7
+L0 1 83
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 SlidingWindow_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|SlidingWindow_tb.sv|
+!i113 0
+R10
+R6
+n@sliding@window_tb
 Ttb_optimized
-!s110 1720629850
-VB3Ll97Uj@e2EGOL::f_hf0
-04 21 4 work PingPongController_tb fast 0
+!s110 1720871411
+VVLEafkVkVTG;4GXZHaUG80
+04 16 4 work SlidingWindow_tb fast 0
 !s124 OEM100
 o+acc
 R6
@@ -275,7 +323,7 @@ ntb_optimized
 OL;O;2021.1;73
 vtestbench
 R7
-R8
+R12
 !i10b 1
 !s100 `edb>^n43kV[cf0gaeRog0
 I?ZF=4@j:^2EW;NjD_2?kd3
@@ -291,15 +339,15 @@ R3
 r1
 !s85 0
 31
-R10
+R9
 !s107 testbench_template.sv|
 !s90 -reportprogress|300|-sv|-work|work|testbench_template.sv|
 !i113 0
-R11
+R10
 R6
 vtestbench_relu
 R7
-R8
+R12
 !i10b 1
 !s100 d;eB1IGX>89bb`>JQL7Ie1
 I]AHZej_cnP=ULB4H=don=1
@@ -315,15 +363,15 @@ R3
 r1
 !s85 0
 31
-R10
+R9
 !s107 testbench_relu.sv|
 !s90 -reportprogress|300|-sv|-work|work|testbench_relu.sv|
 !i113 0
-R11
+R10
 R6
 vtestbench_zero_padding
 R7
-R8
+R12
 !i10b 1
 !s100 n0l5R^?;7ALZ:8mUhM1d?2
 IlloY?77kMH9FS[eAS@PjQ0
@@ -339,21 +387,21 @@ R3
 r1
 !s85 0
 31
-R10
+R9
 !s107 testbench_zero_padding.sv|
 !s90 -reportprogress|300|-sv|-work|work|testbench_zero_padding.sv|
 !i113 0
-R11
+R10
 R6
 vvideo_pattern_gen_axis
 R7
-R8
+R12
 !i10b 1
 !s100 `6[mbN?YMDLCANOlE@FiS0
 IC4zffg_1Ai^f]Pm;H7GBC3
 S1
 R0
-R12
+R11
 8video_pattern_gen_axis.sv
 Fvideo_pattern_gen_axis.sv
 !i122 2
@@ -363,11 +411,11 @@ R3
 r1
 !s85 0
 31
-R10
+R9
 !s107 video_pattern_gen_axis.sv|
 !s90 -reportprogress|300|-sv|-work|work|video_pattern_gen_axis.sv|
 !i113 0
-R11
+R10
 R6
 vzero_padding_axis
 R1
@@ -378,7 +426,7 @@ R0
 w1720448869
 8../HDL/zero_padding_axis.v
 F../HDL/zero_padding_axis.v
-!i122 10
+!i122 11
 L0 3 170
 R2
 R3

@@ -7,3 +7,4 @@
 ../HDL/LineBuffer.v
 ../HDL/PingPongController.v
 ../HDL/dual_port_mem.v
+../HDL/SlidingWindow.v

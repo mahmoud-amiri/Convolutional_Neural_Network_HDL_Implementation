@@ -6,7 +6,7 @@ module SlidingWindow #(
 )(
     input clk,
     input reset,
-    input [KERNEL_WIDTH*DATA_WIDTH-1:0] data_in,
+    input [KERNEL_HEIGHT*DATA_WIDTH-1:0] data_in,
     output reg [DATA_WIDTH-1:0] data_out
 );
 
@@ -19,11 +19,13 @@ module SlidingWindow #(
     reg signed [31:0] partial_sum[KERNEL_HEIGHT-1:0][KERNEL_WIDTH-1:0];
     reg signed [31:0] sum_stage1[KERNEL_HEIGHT-1:0];
     reg signed [31:0] sum_stage2;
+    integer i, j;
+
 
     // Shift register logic to create the sliding window
     always @(posedge clk or posedge reset) begin
         if (reset) begin
-            integer i, j;
+            
             // Split the concatenated KERNEL_COEF into a 2D array
             for (i = 0; i < KERNEL_HEIGHT; i = i + 1) begin
                 for (j = 0; j < KERNEL_WIDTH; j = j + 1) begin
@@ -46,8 +48,8 @@ module SlidingWindow #(
                 sum_stage1[i] <= 0;
             end
             sum_stage2 <= 0;
+            
         end else begin
-            integer i, j;
             // Shift the window left
             for (i = 0; i < KERNEL_HEIGHT; i = i + 1) begin
                 for (j = 1; j < KERNEL_WIDTH; j = j + 1) begin
