@@ -30,19 +30,19 @@ module conv_layer_axis #(
 );
 
     // Internal signals
-    wire [C_AXIS_TDATA_WIDTH-1 : 0] data_in [0:NUM_DIMENSIONS-1];
+    wire [C_AXIS_TDATA_WIDTH-1 : 0] data_in;
     wire user_in;
     wire last_in;
     wire empty;
     reg read_en;
-    reg [C_AXIS_TDATA_WIDTH-1 : 0] data_out [0:NUM_DIMENSIONS-1];
-    reg user_out [0:NUM_DIMENSIONS-1];
+    reg [C_AXIS_TDATA_WIDTH-1 : 0] data_out;
+    reg user_out;
     reg last_out;
     reg wr_en;
     wire full;
 
     // Intermediate signals for convolution processing
-    wire [DATA_WIDTH-1:0] conv_result [0:NUM_DIMENSIONS-1];
+    wire [DATA_WIDTH*NUM_DIMENSIONS-1:0] concatenated_conv_result;
     wire [13:0] wr_addr;
 
     // AXI Stream Slave Interface (Input)
@@ -58,7 +58,7 @@ module conv_layer_axis #(
         .S_AXIS_TLAST(s00_axis_tlast),
         .S_AXIS_TVALID(s00_axis_tvalid),
         .S_AXIS_TUSER(s00_axis_tuser[0]),
-        .data_out(data_in[0]),
+        .data_out(data_in),
         .user_out(user_in),
         .last_out(last_in),
         .empty(empty),
@@ -68,44 +68,25 @@ module conv_layer_axis #(
     // Extract the write address from s00_axis_tdata or use a predefined method
     assign wr_addr = s00_axis_tdata[13:0];  // Adjust this assignment as necessary
 
-    // Convert input data to a multidimensional array
-    genvar i;
-    generate
-        for (i = 0; i < NUM_DIMENSIONS; i = i + 1) begin : gen_data_split
-            assign data_in[i] = s00_axis_tdata[(i+1)*C_AXIS_TDATA_WIDTH-1:i*C_AXIS_TDATA_WIDTH];
-        end
-    endgenerate
-
-    // Generate blocks for each dimension
-    generate
-        for (i = 0; i < NUM_DIMENSIONS; i = i + 1) begin : gen_conv_processing
-            // Instantiate the ConvProcessing module
-            ConvProcessing #(
-                .NUM_LINES(NUM_LINES),
-                .DATA_WIDTH(DATA_WIDTH),
-                .KERNEL_WIDTH(KERNEL_WIDTH),
-                .KERNEL_HEIGHT(KERNEL_HEIGHT),
-                .KERNEL_COEF(KERNEL_COEF)
-            ) conv_processing (
-                .clk(clk),
-                .reset(~resetn),
-                .eol(last_in),
-                .we(s00_axis_tvalid && s00_axis_tready),
-                .ready(m00_axis_tready),
-                .wr_addr(wr_addr),
-                .data_in(data_in[i]),
-                .conv_result(conv_result[i])
-            );
-        end
-    endgenerate
-
-    // Concatenate all conv_result signals
-    wire [DATA_WIDTH*NUM_DIMENSIONS-1:0] concatenated_conv_result;
-    generate
-        for (i = 0; i < NUM_DIMENSIONS; i = i + 1) begin : gen_concat
-            assign concatenated_conv_result[(i+1)*DATA_WIDTH-1:i*DATA_WIDTH] = conv_result[i];
-        end
-    endgenerate
+    // Instantiate the ConvProcessingMultiDim module
+    ConvProcessingMultiDim #(
+        .NUM_DIMENSIONS(NUM_DIMENSIONS),
+        .NUM_LINES(NUM_LINES),
+        .DATA_WIDTH(DATA_WIDTH),
+        .KERNEL_WIDTH(KERNEL_WIDTH),
+        .KERNEL_HEIGHT(KERNEL_HEIGHT),
+        .KERNEL_COEF(KERNEL_COEF),
+        .C_AXIS_TDATA_WIDTH(C_AXIS_TDATA_WIDTH)
+    ) conv_processing_multi_dim (
+        .clk(clk),
+        .resetn(resetn),
+        .eol(last_in),
+        .we(s00_axis_tvalid && s00_axis_tready),
+        .ready(m00_axis_tready),
+        .wr_addr(wr_addr),
+        .s00_axis_tdata(s00_axis_tdata),
+        .concatenated_conv_result(concatenated_conv_result)
+    );
 
     // AXI Stream Master Interface (Output)
     M00_AXIS # ( 
@@ -121,7 +102,7 @@ module conv_layer_axis #(
         .M_AXIS_TREADY(m00_axis_tready),
         .M_AXIS_TUSER(m00_axis_tuser),
         .data_in(concatenated_conv_result),
-        .user_in(user_out[0]),  // Assuming user_out[0] is representative
+        .user_in(user_out),  // Assuming user_out is representative
         .last_in(last_out),
         .wr_en(wr_en),
         .full(full)
@@ -138,7 +119,7 @@ module conv_layer_axis #(
             if (!empty && !full) begin
                 read_en <= 1;
                 last_out <= last_in;
-                user_out[0] <= user_in;
+                user_out <= user_in;
                 wr_en <= 1;
             end else begin
                 read_en <= 0;
